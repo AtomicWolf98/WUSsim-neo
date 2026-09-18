@@ -1,0 +1,76 @@
+{
+  "elapsed_seconds": 939.7281668186188,
+  "evaluation_config": "configs/case1_company_eval_v1.json",
+  "evaluation_config_sha256": "89f07130267c3e666b52693a95636a149441e8059f994971215fb30ee121cae2",
+  "expected_run_count": 1248,
+  "limitations": [
+    "single-UE abstract scheduler and service-rate model",
+    "short fixed windows are combined over independent seeds",
+    "no PHY BLER/channel/scheduler calibration",
+    "sensitivity results isolate one changed assumption at a time",
+    "the primary matrix uses explicitly aligned zero calendar phases"
+  ],
+  "nominal_cases": [
+    "1-1",
+    "1-2",
+    "1-3",
+    "1-4",
+    "1-5",
+    "1-6"
+  ],
+  "nominal_seed_count": 64,
+  "profile": "wus_next/profiles/sixg_case1_v1.json",
+  "profile_sha256": "95b459c262e266ef526298a43c3cca292737bd3cb141c10712e9799de078ddb8",
+  "purpose": "convergence and parameter sensitivity audit; summary-only, no raw trace retention",
+  "run_count": 1248,
+  "scenarios": {
+    "annex_e_wus_mo_4ms": {
+      "wus_rx_ns": 4000000
+    },
+    "cdrx_offset_80ms": {
+      "cdrx_offset_ns": 80000000
+    },
+    "ideal_detection": {
+      "detection_scenario": "ideal"
+    },
+    "impaired_detection": {
+      "detection_scenario": "impaired"
+    },
+    "independent_wake_delay_3ms": {
+      "gap_ns": 3000000
+    },
+    "lr_wus_power_45": {
+      "lr_wus_power_unit": 45.0
+    },
+    "measurement_offset_80ms": {
+      "measurement_offset_ns": 80000000
+    },
+    "service_rate_1600_mbps": {
+      "service_rate_bits_per_ms": 1600000
+    },
+    "service_rate_400_mbps": {
+      "service_rate_bits_per_ms": 400000
+    },
+    "wus_offset_2p5ms": {
+      "wus_offset_ns": 2500000
+    }
+  },
+  "sensitivity_cases": [
+    "1-1",
+    "1-5",
+    "1-6"
+  ],
+  "sensitivity_seed_count": 8,
+  "source_sha256": {
+    "run_cases_1_to_6.py": "23cc5da3e646096a45bccdedc863488fc78113b12dbc858be7f3fd5e2e6632f9",
+    "run_theory_audit.py": "d672269c3d5909e215b68372b3f697613f5710d92a082efdfaec5050ba153518",
+    "wus_next/integration/runner.py": "30167d0d5bb807fc46e9461099db6114c032d3c90a613ad3e65982ca17a74ab5",
+    "wus_next/policy6g/machine.py": "25adb60442adbc5dd95d3f6cd19305b4696aea9695852f4cff965e96e274451e",
+    "wus_next/policy6g/strategies.py": "6e7e04b682bd657dadd763ae86699d8993b79e80ac18855c35916d99dfa7a263"
+  },
+  "status": "PASS",
+  "traffic_ids": [
+    "FTP3",
+    "IM"
+  ]
+}

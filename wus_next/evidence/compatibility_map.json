@@ -1,0 +1,20 @@
+{
+  "compatibility_map_version": "1.0",
+  "freeze_date": "2026-09-15",
+  "policy": "Do not fill an older specification field from a newer release. Unknown CR/field interactions remain UNRESOLVED.",
+  "selected_versions": [
+    {"spec":"TS 38.211","version":"19.3.0","source_id":"NEW-38211","status":"ACQUIRED_NOT_FULLY_REVIEWED","fields":["LP-WUS waveform/sequence inputs"],"depends_on":[],"compatibility":"VERSION_SCOPE_ONLY","notes":"Exact PHY formula and receiver mapping remain W05 scope."},
+    {"spec":"TS 38.212","version":"19.3.0","source_id":"NEW-38212","status":"ACQUIRED_NOT_FULLY_REVIEWED","fields":["coding inputs for WUS/PDCCH references"],"depends_on":["TS 38.211 19.3.0"],"compatibility":"VERSION_SCOPE_ONLY","notes":"No coding implementation is activated by W00."},
+    {"spec":"TS 38.213","version":"19.4.0","source_id":"LOCAL-38213","status":"LOCAL_ACQUIRED_RELEVANT_SCOPE","fields":["10.4D LP-WUS monitoring and offset behavior"],"depends_on":["TS 38.211 19.3.0","TS 38.212 19.3.0","TS 38.321 19.3.0","TS 38.331 19.3.0"],"compatibility":"PARTIALLY_VERIFIED","notes":"Protocol behavior is not implemented by W00; version delta against other selected releases is recorded."},
+    {"spec":"TS 38.321","version":"19.3.0","source_id":"LOCAL-38321","status":"LOCAL_ACQUIRED_RELEVANT_SCOPE","fields":["5.7 DRX timing","LP-WUS timer interaction"],"depends_on":["TS 38.213 19.4.0","TS 38.331 19.3.0"],"compatibility":"PARTIALLY_VERIFIED","notes":"MO±4 ms, Active Time and HARQ details remain W06 verification items."},
+    {"spec":"TS 38.331","version":"19.3.0","source_id":"LOCAL-38331","status":"LOCAL_ACQUIRED_RELEVANT_SCOPE","fields":["LPWUS-Config-r19","lpwus-TimeOffset1-1-r19","lpwus-TimeOffset1-2-r19"],"depends_on":["TS 38.213 19.4.0","TS 38.321 19.3.0"],"compatibility":"PARTIALLY_VERIFIED","notes":"INTEGER(41..592), in 0.125 ms units; simultaneous 1-1/1-2 configuration is not accepted as an automatic assumption."},
+    {"spec":"TS 38.304","version":"19.2.0","source_id":"NEW-38304","status":"ACQUIRED_NOT_FULLY_REVIEWED","fields":["idle/inactive paging procedure inputs"],"depends_on":["TS 38.213 19.4.0","TS 38.321 19.3.0","TS 38.331 19.3.0"],"compatibility":"UNRESOLVED_FOR_IDLE","notes":"Idle PF/PO profile is not enabled by W00; only the source version is registered."}
+  ],
+  "known_incompatibilities_or_open_items": [
+    {"item":"PHY receiver/SNR mapping","status":"UNRESOLVED","impact":"No formal detection or coverage profile may be enabled."},
+    {"item":"R1-070674 AMR VoIP source","status":"UNRESOLVED","impact":"Formal VoIP profile is rejected by validator."},
+    {"item":"R1-2603452 moderator summary","status":"UNRESOLVED","impact":"R1-2603659 proposals do not become meeting agreements."},
+    {"item":"TS 38.133 RRM/RLM accuracy clause","status":"UNRESOLVED","impact":"EE measurement energy calendar may be represented, but accuracy/RLM claims stay disabled."}
+  ]
+}
+

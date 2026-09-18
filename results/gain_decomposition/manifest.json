@@ -1,0 +1,28 @@
+{
+  "counterfactual_run_count": 128,
+  "evaluation_config": "configs/case1_company_eval_v1.json",
+  "evaluation_config_sha256": "89f07130267c3e666b52693a95636a149441e8059f994971215fb30ee121cae2",
+  "interpretation_warning": "Sequential contributions depend on the selected path because trigger, timer and measurement costs interact. Negative or above-100-percentage-point contributions are valid offsets; only the total endpoint gain is path invariant.",
+  "method": "paired 64-seed sequential counterfactual decomposition",
+  "nominal_seed_count": 64,
+  "nominal_seed_metrics": "results/theory_audit/nominal_seed_metrics.csv",
+  "nominal_seed_metrics_sha256": "c6f42b6b5d7915b94519fc582ed62335babfac630d91e4731b78d497f55ce30b",
+  "path": [
+    "Case 1-1",
+    "independent WUS with the same 100 ms post-transmission tail",
+    "Case 1-5 with the proposed 8 ms tail",
+    "Case 1-6 with EE measurement"
+  ],
+  "source_sha256": {
+    "analyze_gain_decomposition.py": "b88177f7edc5acb9a43faf3379a5f81d14191e03b8443bbbf4f00af44a426edf",
+    "run_cases_1_to_6.py": "23cc5da3e646096a45bccdedc863488fc78113b12dbc858be7f3fd5e2e6632f9",
+    "wus_next/integration/runner.py": "30167d0d5bb807fc46e9461099db6114c032d3c90a613ad3e65982ca17a74ab5",
+    "wus_next/policy6g/machine.py": "25adb60442adbc5dd95d3f6cd19305b4696aea9695852f4cff965e96e274451e",
+    "wus_next/policy6g/strategies.py": "6e7e04b682bd657dadd763ae86699d8993b79e80ac18855c35916d99dfa7a263"
+  },
+  "status": "PASS",
+  "traffic_ids": [
+    "FTP3",
+    "IM"
+  ]
+}

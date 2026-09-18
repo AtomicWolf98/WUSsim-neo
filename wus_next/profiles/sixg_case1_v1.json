@@ -1,0 +1,56 @@
+{
+  "contract_version": "1.0",
+  "profile_id": "sixg_case1_v1",
+  "profile_version": "1.0.0",
+  "profile_status": "ENABLED",
+  "purpose": "Abstract connected single-UE Case 1 mechanism/measurement comparison using paired traffic inputs; not a PHY or full Rel-19 conformance profile.",
+  "sources": ["LOCAL-126", "LOCAL-38840", "W00-TASK", "FIXTURE-ORACLE"],
+  "case_ids": ["1-1", "1-2", "1-3", "1-4", "1-5", "1-6"],
+  "parameters": {
+    "time": {
+      "grid_ns": {"value": 500000, "unit": "ns", "source_id":"W00-TASK", "locator":"W00 step 2; abstract 6G profile rule", "evidence_status":"ASSUMPTION", "interpretation":"Abstract profile time grid; future Rel-19 offsets are not rounded onto this grid.", "valid_domain":{"integer":true,"min":1}},
+      "event_interval": {"value":"[start_ns,end_ns)", "unit":null, "source_id":"W00-TASK", "locator":"DEVELOPMENT_CONTRACT_ZH.md section 2", "evidence_status":"MEETING_AGREEMENT", "interpretation":"All public intervals use a half-open integer-nanosecond range.", "valid_domain":"start_ns < end_ns"}
+    },
+    "traffic": {
+      "FTP3": {
+        "cdrx": {"value":[160,8,100], "unit":"ms", "source_id":"LOCAL-126", "locator":"B4787 context; R1-2603659 B317", "evidence_status":"MEETING_AGREEMENT", "interpretation":"FTP3 C-DRX cycle/on-duration/inactivity tuple.", "valid_domain":{"length":3,"min":0}},
+        "iat": {"value":200, "unit":"ms", "source_id":"LOCAL-38840", "locator":"section 8; reviewed sim/params.py line 72", "evidence_status":"RESEARCH_REFERENCE", "interpretation":"Poisson mean inter-arrival input shared by paired cases.", "valid_domain":{"min":0}},
+        "packet_size": {"value":500000, "unit":"bytes", "source_id":"LOCAL-38840", "locator":"section 8; reviewed sim/params.py line 72", "evidence_status":"RESEARCH_REFERENCE", "interpretation":"Abstract FTP3 application packet size, not a PHY TB size.", "valid_domain":{"min":0}}
+      },
+      "IM": {
+        "cdrx": {"value":[320,8,100], "unit":"ms", "source_id":"LOCAL-126", "locator":"B4787 context; R1-2603659 B317", "evidence_status":"MEETING_AGREEMENT", "interpretation":"IM C-DRX cycle/on-duration/inactivity tuple.", "valid_domain":{"length":3,"min":0}},
+        "iat": {"value":2000, "unit":"ms", "source_id":"LOCAL-38840", "locator":"section 8; reviewed sim/params.py line 73", "evidence_status":"RESEARCH_REFERENCE", "interpretation":"Poisson mean inter-arrival input shared by paired cases.", "valid_domain":{"min":0}},
+        "packet_size": {"value":100000, "unit":"bytes", "source_id":"LOCAL-38840", "locator":"section 8; reviewed sim/params.py line 73", "evidence_status":"RESEARCH_REFERENCE", "interpretation":"Abstract IM application packet size, not a PHY TB size.", "valid_domain":{"min":0}}
+      }
+    },
+    "measurement": {
+      "cycle": {"value":20, "unit":"ms", "source_id":"W00-TASK", "locator":"W00 step 6; reviewed config_reviewed.yaml", "evidence_status":"ASSUMPTION", "interpretation":"Self-reported abstract measurement calendar period.", "valid_domain":{"min":0.5}},
+      "duration": {"value":0.5, "unit":"ms", "source_id":"W00-TASK", "locator":"W00 step 6; reviewed config_reviewed.yaml duration_slots on 0.5 ms grid", "evidence_status":"ASSUMPTION", "interpretation":"Self-reported abstract measurement duration.", "valid_domain":{"min":0.125}},
+      "rx_duration": {"value":0.5, "unit":"ms", "source_id":"W00-TASK", "locator":"W00 step 6", "evidence_status":"ASSUMPTION", "interpretation":"Self-reported abstract receive duration.", "valid_domain":{"min":0.125}},
+      "gap": {"value":5, "unit":"ms", "source_id":"W00-TASK", "locator":"W00 step 6; reviewed config_reviewed.yaml wus.gap_ms", "evidence_status":"ASSUMPTION", "interpretation":"WUS reception end to first PDCCH opportunity; not deep wake latency by itself.", "valid_domain":{"min":0}}
+    },
+    "wus": {
+      "default_period": {"value":"traffic_profile.cdrx_cycle_ms", "unit":"derived_ms", "source_id":"W00-TASK", "locator":"W00 step 6", "evidence_status":"ASSUMPTION", "interpretation":"The default WUS period follows the selected traffic DRX cycle; it is not hard-coded to 20 ms.", "valid_domain":"registered traffic reference"},
+      "case_1_6_trigger": {"value":"DL WUS", "unit":null, "source_id":"LOCAL-126", "locator":"B4787 R6", "evidence_status":"MEETING_AGREEMENT", "interpretation":"Case 1-6 must not be represented as DCP.", "valid_domain":["DL WUS"]}
+    },
+    "power": {
+      "micro": {"value":45, "unit":"relative_power_unit", "source_id":"LOCAL-38840", "locator":"Table 18; reviewed sim/params.py line 14", "evidence_status":"RESEARCH_REFERENCE", "interpretation":"Relative MR micro-sleep power.", "valid_domain":{"min":0}},
+      "light": {"value":20, "unit":"relative_power_unit", "source_id":"LOCAL-38840", "locator":"Table 18; reviewed sim/params.py line 15", "evidence_status":"RESEARCH_REFERENCE", "interpretation":"Relative MR light-sleep power.", "valid_domain":{"min":0}},
+      "deep": {"value":1, "unit":"relative_power_unit", "source_id":"LOCAL-38840", "locator":"Table 18; reviewed sim/params.py line 16", "evidence_status":"RESEARCH_REFERENCE", "interpretation":"Relative MR deep-sleep power; feasibility is separately checked against gap and wake model.", "valid_domain":{"min":0}},
+      "sharing_policy": {"value":"shared_max", "unit":null, "source_id":"W00-TASK", "locator":"DEVELOPMENT_CONTRACT_ZH.md section 5", "evidence_status":"ASSUMPTION", "interpretation":"Explicit EE shared-resource policy; consumers may select serial or independent_sum with evidence.", "valid_domain":["shared_max","serial","independent_sum"]}
+    },
+    "detection": {
+      "mdr": {"value":0.01, "unit":"probability", "source_id":"W00-TASK", "locator":"reviewed config_reviewed.yaml detection.mdr", "evidence_status":"ASSUMPTION", "interpretation":"Detection assumption pending PHY calibration.", "valid_domain":{"min":0,"max":1}},
+      "far": {"value":0.01, "unit":"probability", "source_id":"W00-TASK", "locator":"reviewed config_reviewed.yaml detection.far", "evidence_status":"ASSUMPTION", "interpretation":"H0 false-alarm assumption.", "valid_domain":{"min":0,"max":1}},
+      "fdr": {"value":0.01, "unit":"probability", "source_id":"W00-TASK", "locator":"reviewed config_reviewed.yaml detection.fdr", "evidence_status":"ASSUMPTION", "interpretation":"H2 false-detection assumption; only estimable when other WUS trials exist.", "valid_domain":{"min":0,"max":1}}
+    }
+  },
+  "traffic_profiles": {
+    "FTP3": {"evidence_status":"RESEARCH_REFERENCE", "formal_eligible":false, "role":"abstract_path_A_traffic"},
+    "IM": {"evidence_status":"RESEARCH_REFERENCE", "formal_eligible":false, "role":"abstract_path_A_traffic"}
+  },
+  "capabilities": {"case_1":true, "case_2":false, "abstract_energy_latency":true, "formal_phy":false, "formal_rel19":false, "formal_voip":false, "full_reproduction":false},
+  "publication": {"formal_eligible":false, "reason":"Abstract path-A profile; PHY, full Rel-19, multi-UE and absolute-power evidence are not supplied."},
+  "blocked_reasons": ["not a PHY-calibrated detection profile", "not a full Rel-19 procedure profile", "not a formal 3GPP conformance claim"]
+}
+

@@ -1,0 +1,3284 @@
+{
+  "actions": [
+    {
+      "action_id": "act-ue1-1",
+      "caused_by": "mo_1-2_FTP3_0",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 2000000,
+        "monitor_id": "MEASUREMENT_NON_EE",
+        "reason": "MEASUREMENT_CALENDAR"
+      },
+      "time_ns": 0,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-2",
+      "caused_by": "mo_1-2_FTP3_0",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 71429,
+        "monitor_id": "DCP_RX",
+        "monitor_span_ns": 571429,
+        "occasion_offsets_ns": [
+          0,
+          500000
+        ],
+        "other_wus": false,
+        "target_frozen": false
+      },
+      "time_ns": 0,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-3",
+      "caused_by": "mo_1-2_FTP3_0",
+      "kind": "START_TIMER",
+      "payload": {
+        "duration_ns": 571429,
+        "end_ns": 571429,
+        "restart": true,
+        "role": "monitor_window",
+        "timer_id": "wus_timer"
+      },
+      "time_ns": 0,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-4",
+      "caused_by": "detection_mo_1-2_0",
+      "kind": "STOP_TIMER",
+      "payload": {
+        "reason": "monitor_window_complete",
+        "timer_id": "wus_timer"
+      },
+      "time_ns": 571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-5",
+      "caused_by": "detection_mo_1-2_0",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "condition": "H0",
+        "deep_claim": false,
+        "gap_ns": 3000000,
+        "reason": "MO_DETECTION",
+        "wake_effective_ns": 3571429
+      },
+      "time_ns": 571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-6",
+      "caused_by": "detection_mo_1-2_0",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 3571429,
+        "earliest_radio_ready_ns": 571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-7",
+      "caused_by": "tick_FTP3_571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 3571429,
+        "earliest_radio_ready_ns": 571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-8",
+      "caused_by": "WUS_EFFECTIVE",
+      "kind": "START_TIMER",
+      "payload": {
+        "duration_ns": 8000000,
+        "effective_from_ns": 3571429,
+        "end_ns": 11571429,
+        "restart": true,
+        "source_mo_id": "mo_1-2_0",
+        "timer_id": "drx_on_duration"
+      },
+      "time_ns": 3571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-9",
+      "caused_by": "WUS_EFFECTIVE",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 8000000,
+        "monitor_id": "PDCCH",
+        "timer_id": null
+      },
+      "time_ns": 3571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-10",
+      "caused_by": "tick_FTP3_11571429",
+      "kind": "STOP_TIMER",
+      "payload": {
+        "reason": "TIMER_EXPIRY",
+        "timer_id": "drx_on_duration"
+      },
+      "time_ns": 11571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-11",
+      "caused_by": "tick_FTP3_11571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 160000000,
+        "earliest_radio_ready_ns": 11571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 11571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-12",
+      "caused_by": "mo_1-2_FTP3_160000000",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 2000000,
+        "monitor_id": "MEASUREMENT_NON_EE",
+        "reason": "MEASUREMENT_CALENDAR"
+      },
+      "time_ns": 160000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-13",
+      "caused_by": "mo_1-2_FTP3_160000000",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 71429,
+        "monitor_id": "DCP_RX",
+        "monitor_span_ns": 571429,
+        "occasion_offsets_ns": [
+          0,
+          500000
+        ],
+        "other_wus": false,
+        "target_frozen": false
+      },
+      "time_ns": 160000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-14",
+      "caused_by": "mo_1-2_FTP3_160000000",
+      "kind": "START_TIMER",
+      "payload": {
+        "duration_ns": 571429,
+        "end_ns": 160571429,
+        "restart": true,
+        "role": "monitor_window",
+        "timer_id": "wus_timer"
+      },
+      "time_ns": 160000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-15",
+      "caused_by": "detection_mo_1-2_160000000",
+      "kind": "STOP_TIMER",
+      "payload": {
+        "reason": "monitor_window_complete",
+        "timer_id": "wus_timer"
+      },
+      "time_ns": 160571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-16",
+      "caused_by": "detection_mo_1-2_160000000",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 320000000,
+        "earliest_radio_ready_ns": 160571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 160571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-17",
+      "caused_by": "tick_FTP3_160571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 320000000,
+        "earliest_radio_ready_ns": 160571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 160571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-18",
+      "caused_by": "tick_FTP3_163571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 320000000,
+        "earliest_radio_ready_ns": 163571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 163571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-19",
+      "caused_by": "tick_FTP3_168000000",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 320000000,
+        "earliest_radio_ready_ns": 168000000,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 168000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-20",
+      "caused_by": "tick_FTP3_171571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 320000000,
+        "earliest_radio_ready_ns": 171571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 171571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-21",
+      "caused_by": "mo_1-2_FTP3_320000000",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 2000000,
+        "monitor_id": "MEASUREMENT_NON_EE",
+        "reason": "MEASUREMENT_CALENDAR"
+      },
+      "time_ns": 320000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-22",
+      "caused_by": "mo_1-2_FTP3_320000000",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 71429,
+        "monitor_id": "DCP_RX",
+        "monitor_span_ns": 571429,
+        "occasion_offsets_ns": [
+          0,
+          500000
+        ],
+        "other_wus": false,
+        "target_frozen": false
+      },
+      "time_ns": 320000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-23",
+      "caused_by": "mo_1-2_FTP3_320000000",
+      "kind": "START_TIMER",
+      "payload": {
+        "duration_ns": 571429,
+        "end_ns": 320571429,
+        "restart": true,
+        "role": "monitor_window",
+        "timer_id": "wus_timer"
+      },
+      "time_ns": 320000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-24",
+      "caused_by": "detection_mo_1-2_320000000",
+      "kind": "STOP_TIMER",
+      "payload": {
+        "reason": "monitor_window_complete",
+        "timer_id": "wus_timer"
+      },
+      "time_ns": 320571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-25",
+      "caused_by": "detection_mo_1-2_320000000",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 480000000,
+        "earliest_radio_ready_ns": 320571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 320571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-26",
+      "caused_by": "tick_FTP3_320571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 480000000,
+        "earliest_radio_ready_ns": 320571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 320571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-27",
+      "caused_by": "tick_FTP3_323571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 480000000,
+        "earliest_radio_ready_ns": 323571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 323571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-28",
+      "caused_by": "tick_FTP3_328000000",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 480000000,
+        "earliest_radio_ready_ns": 328000000,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 328000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-29",
+      "caused_by": "tick_FTP3_331571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 480000000,
+        "earliest_radio_ready_ns": 331571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 331571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-30",
+      "caused_by": "mo_1-2_FTP3_480000000",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 2000000,
+        "monitor_id": "MEASUREMENT_NON_EE",
+        "reason": "MEASUREMENT_CALENDAR"
+      },
+      "time_ns": 480000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-31",
+      "caused_by": "mo_1-2_FTP3_480000000",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 71429,
+        "monitor_id": "DCP_RX",
+        "monitor_span_ns": 571429,
+        "occasion_offsets_ns": [
+          0,
+          500000
+        ],
+        "other_wus": false,
+        "target_frozen": false
+      },
+      "time_ns": 480000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-32",
+      "caused_by": "mo_1-2_FTP3_480000000",
+      "kind": "START_TIMER",
+      "payload": {
+        "duration_ns": 571429,
+        "end_ns": 480571429,
+        "restart": true,
+        "role": "monitor_window",
+        "timer_id": "wus_timer"
+      },
+      "time_ns": 480000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-33",
+      "caused_by": "detection_mo_1-2_480000000",
+      "kind": "STOP_TIMER",
+      "payload": {
+        "reason": "monitor_window_complete",
+        "timer_id": "wus_timer"
+      },
+      "time_ns": 480571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-34",
+      "caused_by": "detection_mo_1-2_480000000",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 640000000,
+        "earliest_radio_ready_ns": 480571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 480571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-35",
+      "caused_by": "tick_FTP3_480571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 640000000,
+        "earliest_radio_ready_ns": 480571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 480571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-36",
+      "caused_by": "tick_FTP3_483571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 640000000,
+        "earliest_radio_ready_ns": 483571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 483571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-37",
+      "caused_by": "tick_FTP3_488000000",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 640000000,
+        "earliest_radio_ready_ns": 488000000,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 488000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-38",
+      "caused_by": "tick_FTP3_491571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 640000000,
+        "earliest_radio_ready_ns": 491571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 491571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-39",
+      "caused_by": "PACKET_ARRIVAL",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 640000000,
+        "earliest_radio_ready_ns": 513878732,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 513878732,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-40",
+      "caused_by": "tick_FTP3_513878732",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 640000000,
+        "earliest_radio_ready_ns": 513878732,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 513878732,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-41",
+      "caused_by": "tick_FTP3_613878732",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 640000000,
+        "earliest_radio_ready_ns": 613878732,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 613878732,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-42",
+      "caused_by": "mo_1-2_FTP3_640000000",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 2000000,
+        "monitor_id": "MEASUREMENT_NON_EE",
+        "reason": "MEASUREMENT_CALENDAR"
+      },
+      "time_ns": 640000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-43",
+      "caused_by": "mo_1-2_FTP3_640000000",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 71429,
+        "monitor_id": "DCP_RX",
+        "monitor_span_ns": 571429,
+        "occasion_offsets_ns": [
+          0,
+          500000
+        ],
+        "other_wus": false,
+        "target_frozen": true
+      },
+      "time_ns": 640000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-44",
+      "caused_by": "mo_1-2_FTP3_640000000",
+      "kind": "START_TIMER",
+      "payload": {
+        "duration_ns": 571429,
+        "end_ns": 640571429,
+        "restart": true,
+        "role": "monitor_window",
+        "timer_id": "wus_timer"
+      },
+      "time_ns": 640000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-45",
+      "caused_by": "detection_mo_1-2_640000000",
+      "kind": "STOP_TIMER",
+      "payload": {
+        "reason": "monitor_window_complete",
+        "timer_id": "wus_timer"
+      },
+      "time_ns": 640571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-46",
+      "caused_by": "detection_mo_1-2_640000000",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "condition": "H1",
+        "deep_claim": false,
+        "gap_ns": 3000000,
+        "reason": "MO_DETECTION",
+        "wake_effective_ns": 643571429
+      },
+      "time_ns": 640571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-47",
+      "caused_by": "detection_mo_1-2_640000000",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 643571429,
+        "earliest_radio_ready_ns": 640571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 640571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-48",
+      "caused_by": "tick_FTP3_640571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 643571429,
+        "earliest_radio_ready_ns": 640571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 640571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-49",
+      "caused_by": "WUS_EFFECTIVE",
+      "kind": "START_TIMER",
+      "payload": {
+        "duration_ns": 8000000,
+        "effective_from_ns": 643571429,
+        "end_ns": 651571429,
+        "restart": true,
+        "source_mo_id": "mo_1-2_640000000",
+        "timer_id": "drx_on_duration"
+      },
+      "time_ns": 643571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-50",
+      "caused_by": "WUS_EFFECTIVE",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 8000000,
+        "monitor_id": "PDCCH",
+        "timer_id": null
+      },
+      "time_ns": 643571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-51",
+      "caused_by": "new_tx_tx:ue1:ue1.FTP3.p00000000:a1:643571429:0",
+      "kind": "START_TIMER",
+      "payload": {
+        "duration_ns": 100000000,
+        "end_ns": 743571429,
+        "restart": true,
+        "timer_id": "drx_inactivity"
+      },
+      "time_ns": 643571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-52",
+      "caused_by": "tick_FTP3_651571429",
+      "kind": "STOP_TIMER",
+      "payload": {
+        "reason": "TIMER_EXPIRY",
+        "timer_id": "drx_on_duration"
+      },
+      "time_ns": 651571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-53",
+      "caused_by": "PACKET_ARRIVAL",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 800000000,
+        "earliest_radio_ready_ns": 756522678,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 756522678,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-54",
+      "caused_by": "tick_FTP3_756522678",
+      "kind": "STOP_TIMER",
+      "payload": {
+        "reason": "TIMER_EXPIRY",
+        "timer_id": "drx_inactivity"
+      },
+      "time_ns": 756522678,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-55",
+      "caused_by": "tick_FTP3_756522678",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 800000000,
+        "earliest_radio_ready_ns": 756522678,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 756522678,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-56",
+      "caused_by": "mo_1-2_FTP3_800000000",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 2000000,
+        "monitor_id": "MEASUREMENT_NON_EE",
+        "reason": "MEASUREMENT_CALENDAR"
+      },
+      "time_ns": 800000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-57",
+      "caused_by": "mo_1-2_FTP3_800000000",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 71429,
+        "monitor_id": "DCP_RX",
+        "monitor_span_ns": 571429,
+        "occasion_offsets_ns": [
+          0,
+          500000
+        ],
+        "other_wus": false,
+        "target_frozen": true
+      },
+      "time_ns": 800000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-58",
+      "caused_by": "mo_1-2_FTP3_800000000",
+      "kind": "START_TIMER",
+      "payload": {
+        "duration_ns": 571429,
+        "end_ns": 800571429,
+        "restart": true,
+        "role": "monitor_window",
+        "timer_id": "wus_timer"
+      },
+      "time_ns": 800000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-59",
+      "caused_by": "detection_mo_1-2_800000000",
+      "kind": "STOP_TIMER",
+      "payload": {
+        "reason": "monitor_window_complete",
+        "timer_id": "wus_timer"
+      },
+      "time_ns": 800571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-60",
+      "caused_by": "detection_mo_1-2_800000000",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "condition": "H1",
+        "deep_claim": false,
+        "gap_ns": 3000000,
+        "reason": "MO_DETECTION",
+        "wake_effective_ns": 803571429
+      },
+      "time_ns": 800571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-61",
+      "caused_by": "detection_mo_1-2_800000000",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 803571429,
+        "earliest_radio_ready_ns": 800571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 800571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-62",
+      "caused_by": "tick_FTP3_800571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 803571429,
+        "earliest_radio_ready_ns": 800571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 800571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-63",
+      "caused_by": "WUS_EFFECTIVE",
+      "kind": "START_TIMER",
+      "payload": {
+        "duration_ns": 8000000,
+        "effective_from_ns": 803571429,
+        "end_ns": 811571429,
+        "restart": true,
+        "source_mo_id": "mo_1-2_800000000",
+        "timer_id": "drx_on_duration"
+      },
+      "time_ns": 803571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-64",
+      "caused_by": "WUS_EFFECTIVE",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 8000000,
+        "monitor_id": "PDCCH",
+        "timer_id": null
+      },
+      "time_ns": 803571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-65",
+      "caused_by": "new_tx_tx:ue1:ue1.FTP3.p00000001:a2:803571429:0",
+      "kind": "START_TIMER",
+      "payload": {
+        "duration_ns": 100000000,
+        "end_ns": 903571429,
+        "restart": true,
+        "timer_id": "drx_inactivity"
+      },
+      "time_ns": 803571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-66",
+      "caused_by": "tick_FTP3_811571429",
+      "kind": "STOP_TIMER",
+      "payload": {
+        "reason": "TIMER_EXPIRY",
+        "timer_id": "drx_on_duration"
+      },
+      "time_ns": 811571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-67",
+      "caused_by": "mo_1-2_FTP3_960000000",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 2000000,
+        "monitor_id": "MEASUREMENT_NON_EE",
+        "reason": "MEASUREMENT_CALENDAR"
+      },
+      "time_ns": 960000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-68",
+      "caused_by": "mo_1-2_FTP3_960000000",
+      "kind": "REQUEST_MONITOR",
+      "payload": {
+        "deep_claim": false,
+        "duration_ns": 71429,
+        "monitor_id": "DCP_RX",
+        "monitor_span_ns": 571429,
+        "occasion_offsets_ns": [
+          0,
+          500000
+        ],
+        "other_wus": false,
+        "target_frozen": false
+      },
+      "time_ns": 960000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-69",
+      "caused_by": "mo_1-2_FTP3_960000000",
+      "kind": "START_TIMER",
+      "payload": {
+        "duration_ns": 571429,
+        "end_ns": 960571429,
+        "restart": true,
+        "role": "monitor_window",
+        "timer_id": "wus_timer"
+      },
+      "time_ns": 960000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-70",
+      "caused_by": "tick_FTP3_960000000",
+      "kind": "STOP_TIMER",
+      "payload": {
+        "reason": "TIMER_EXPIRY",
+        "timer_id": "drx_inactivity"
+      },
+      "time_ns": 960000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-71",
+      "caused_by": "detection_mo_1-2_960000000",
+      "kind": "STOP_TIMER",
+      "payload": {
+        "reason": "monitor_window_complete",
+        "timer_id": "wus_timer"
+      },
+      "time_ns": 960571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-72",
+      "caused_by": "detection_mo_1-2_960000000",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 1120000000,
+        "earliest_radio_ready_ns": 960571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 960571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-73",
+      "caused_by": "tick_FTP3_960571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 1120000000,
+        "earliest_radio_ready_ns": 960571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 960571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-74",
+      "caused_by": "tick_FTP3_963571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 1120000000,
+        "earliest_radio_ready_ns": 963571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 963571429,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-75",
+      "caused_by": "tick_FTP3_968000000",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 1120000000,
+        "earliest_radio_ready_ns": 968000000,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 968000000,
+      "ue_id": "ue1"
+    },
+    {
+      "action_id": "act-ue1-76",
+      "caused_by": "tick_FTP3_971571429",
+      "kind": "REQUEST_SLEEP",
+      "payload": {
+        "deep_claim": false,
+        "earliest_next_known_ns": 1120000000,
+        "earliest_radio_ready_ns": 971571429,
+        "gap_ns": 3000000,
+        "reason": "IDLE_WINDOW"
+      },
+      "time_ns": 971571429,
+      "ue_id": "ue1"
+    }
+  ],
+  "baseline_id": "case_1_1",
+  "contract_version": "1.0",
+  "events": [
+    {
+      "event_id": "mo_1-2_FTP3_0",
+      "kind": "MO_START",
+      "payload": {
+        "mo_id": "mo_1-2_0",
+        "other_wus": false
+      },
+      "source_id": "W09_MO_CALENDAR",
+      "time_ns": 0,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_0",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 0,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "detection_mo_1-2_0",
+      "kind": "DETECTION_RESULT",
+      "payload": {
+        "condition": "H0",
+        "mo_id": "mo_1-2_0",
+        "mo_start_ns": 0,
+        "outcome": "WAKE"
+      },
+      "source_id": "W09_DETECTION_ASSUMPTION",
+      "time_ns": 571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_3571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 3571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_8000000",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 8000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_11571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 11571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "mo_1-2_FTP3_160000000",
+      "kind": "MO_START",
+      "payload": {
+        "mo_id": "mo_1-2_160000000",
+        "other_wus": false
+      },
+      "source_id": "W09_MO_CALENDAR",
+      "time_ns": 160000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_160000000",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 160000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "detection_mo_1-2_160000000",
+      "kind": "DETECTION_RESULT",
+      "payload": {
+        "condition": "H0",
+        "mo_id": "mo_1-2_160000000",
+        "mo_start_ns": 160000000,
+        "outcome": "NO_WAKE"
+      },
+      "source_id": "W09_DETECTION_ASSUMPTION",
+      "time_ns": 160571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_160571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 160571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_163571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 163571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_168000000",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 168000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_171571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 171571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "mo_1-2_FTP3_320000000",
+      "kind": "MO_START",
+      "payload": {
+        "mo_id": "mo_1-2_320000000",
+        "other_wus": false
+      },
+      "source_id": "W09_MO_CALENDAR",
+      "time_ns": 320000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_320000000",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 320000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "detection_mo_1-2_320000000",
+      "kind": "DETECTION_RESULT",
+      "payload": {
+        "condition": "H0",
+        "mo_id": "mo_1-2_320000000",
+        "mo_start_ns": 320000000,
+        "outcome": "NO_WAKE"
+      },
+      "source_id": "W09_DETECTION_ASSUMPTION",
+      "time_ns": 320571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_320571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 320571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_323571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 323571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_328000000",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 328000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_331571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 331571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "mo_1-2_FTP3_480000000",
+      "kind": "MO_START",
+      "payload": {
+        "mo_id": "mo_1-2_480000000",
+        "other_wus": false
+      },
+      "source_id": "W09_MO_CALENDAR",
+      "time_ns": 480000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_480000000",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 480000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "detection_mo_1-2_480000000",
+      "kind": "DETECTION_RESULT",
+      "payload": {
+        "condition": "H0",
+        "mo_id": "mo_1-2_480000000",
+        "mo_start_ns": 480000000,
+        "outcome": "NO_WAKE"
+      },
+      "source_id": "W09_DETECTION_ASSUMPTION",
+      "time_ns": 480571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_480571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 480571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_483571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 483571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_488000000",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 488000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_491571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 491571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "packet_ue1.FTP3.p00000000",
+      "kind": "PACKET_ARRIVAL",
+      "payload": {
+        "arrival_ns": 513878732,
+        "deadline_ns": 613878732,
+        "flow_id": "FTP3.u1.dl",
+        "frame_id": null,
+        "metadata": {
+          "arrival_error_bound_ns": 0.5,
+          "arrival_quantization": "round_half_up_nearest_ns",
+          "ip_mtu_bytes": 1500,
+          "ip_packet_count": 334,
+          "ip_payload_bits_sum": 4000000,
+          "mean_interarrival_ms": 200.0,
+          "model_class": "poisson_fixed_size",
+          "pdb_ms": 100.0,
+          "size_bytes": 500000.0,
+          "tb_count": 334,
+          "tb_max_bits": 868584,
+          "tb_payload_bits_sum": 4000000
+        },
+        "packet_id": "ue1.FTP3.p00000000",
+        "size_bits": 4000000,
+        "traffic_profile_id": "FTP3",
+        "ue_id": "ue1"
+      },
+      "source_id": "W02_TRAFFIC",
+      "time_ns": 513878732,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_513878732",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 513878732,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_613878732",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 613878732,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "mo_1-2_FTP3_640000000",
+      "kind": "MO_START",
+      "payload": {
+        "mo_id": "mo_1-2_640000000",
+        "other_wus": false
+      },
+      "source_id": "W09_MO_CALENDAR",
+      "time_ns": 640000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_640000000",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 640000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "detection_mo_1-2_640000000",
+      "kind": "DETECTION_RESULT",
+      "payload": {
+        "condition": "H1",
+        "mo_id": "mo_1-2_640000000",
+        "mo_start_ns": 640000000,
+        "outcome": "WAKE"
+      },
+      "source_id": "W09_DETECTION_ASSUMPTION",
+      "time_ns": 640571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_640571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 640571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_643571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 643571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "new_tx_tx:ue1:ue1.FTP3.p00000000:a1:643571429:0",
+      "kind": "NEW_TRANSMISSION",
+      "payload": {
+        "packet_id": "ue1.FTP3.p00000000",
+        "tx_id": "tx:ue1:ue1.FTP3.p00000000:a1:643571429:0"
+      },
+      "source_id": "W09_SERVICE",
+      "time_ns": 643571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_648000000",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 648000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_651571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 651571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "packet_ue1.FTP3.p00000001",
+      "kind": "PACKET_ARRIVAL",
+      "payload": {
+        "arrival_ns": 756522678,
+        "deadline_ns": 856522678,
+        "flow_id": "FTP3.u1.dl",
+        "frame_id": null,
+        "metadata": {
+          "arrival_error_bound_ns": 0.5,
+          "arrival_quantization": "round_half_up_nearest_ns",
+          "ip_mtu_bytes": 1500,
+          "ip_packet_count": 334,
+          "ip_payload_bits_sum": 4000000,
+          "mean_interarrival_ms": 200.0,
+          "model_class": "poisson_fixed_size",
+          "pdb_ms": 100.0,
+          "size_bytes": 500000.0,
+          "tb_count": 334,
+          "tb_max_bits": 868584,
+          "tb_payload_bits_sum": 4000000
+        },
+        "packet_id": "ue1.FTP3.p00000001",
+        "size_bits": 4000000,
+        "traffic_profile_id": "FTP3",
+        "ue_id": "ue1"
+      },
+      "source_id": "W02_TRAFFIC",
+      "time_ns": 756522678,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_756522678",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 756522678,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "mo_1-2_FTP3_800000000",
+      "kind": "MO_START",
+      "payload": {
+        "mo_id": "mo_1-2_800000000",
+        "other_wus": false
+      },
+      "source_id": "W09_MO_CALENDAR",
+      "time_ns": 800000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_800000000",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 800000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "detection_mo_1-2_800000000",
+      "kind": "DETECTION_RESULT",
+      "payload": {
+        "condition": "H1",
+        "mo_id": "mo_1-2_800000000",
+        "mo_start_ns": 800000000,
+        "outcome": "WAKE"
+      },
+      "source_id": "W09_DETECTION_ASSUMPTION",
+      "time_ns": 800571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_800571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 800571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_803571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 803571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "new_tx_tx:ue1:ue1.FTP3.p00000001:a2:803571429:0",
+      "kind": "NEW_TRANSMISSION",
+      "payload": {
+        "packet_id": "ue1.FTP3.p00000001",
+        "tx_id": "tx:ue1:ue1.FTP3.p00000001:a2:803571429:0"
+      },
+      "source_id": "W09_SERVICE",
+      "time_ns": 803571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_808000000",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 808000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_811571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 811571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_856522678",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 856522678,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "mo_1-2_FTP3_960000000",
+      "kind": "MO_START",
+      "payload": {
+        "mo_id": "mo_1-2_960000000",
+        "other_wus": false
+      },
+      "source_id": "W09_MO_CALENDAR",
+      "time_ns": 960000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_960000000",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 960000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "detection_mo_1-2_960000000",
+      "kind": "DETECTION_RESULT",
+      "payload": {
+        "condition": "H0",
+        "mo_id": "mo_1-2_960000000",
+        "mo_start_ns": 960000000,
+        "outcome": "NO_WAKE"
+      },
+      "source_id": "W09_DETECTION_ASSUMPTION",
+      "time_ns": 960571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_960571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 960571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_963571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 963571429,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_968000000",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 968000000,
+      "ue_id": "ue1"
+    },
+    {
+      "event_id": "tick_FTP3_971571429",
+      "kind": "TICK",
+      "payload": null,
+      "source_id": "W09_CALENDAR",
+      "time_ns": 971571429,
+      "ue_id": "ue1"
+    }
+  ],
+  "evidence_status": "ASSUMPTION",
+  "experiment_id": "pathA_FTP3_1-2_case1_company_eval_v1",
+  "increments": [
+    {
+      "at_ns": 320000000,
+      "end_ns": null,
+      "energy_unit_ms": 450.0,
+      "hardware_group": "mr_sleep_transition",
+      "increment_id": "inc_sleep_transition_000002",
+      "metadata": {
+        "accounting": "one complete entry+exit transition per sleep gap ending in MR activity",
+        "evidence_status": "MIXED_RESEARCH_AND_COMPANY_PROPOSAL",
+        "gap_duration_ns": 158000000,
+        "sleep_state": "deep"
+      },
+      "policy_id": "independent_sum",
+      "source_event_ids": [
+        "mo_1-2_FTP3_320000000"
+      ],
+      "start_ns": null,
+      "ue_id": "ue1"
+    },
+    {
+      "at_ns": 480000000,
+      "end_ns": null,
+      "energy_unit_ms": 450.0,
+      "hardware_group": "mr_sleep_transition",
+      "increment_id": "inc_sleep_transition_000003",
+      "metadata": {
+        "accounting": "one complete entry+exit transition per sleep gap ending in MR activity",
+        "evidence_status": "MIXED_RESEARCH_AND_COMPANY_PROPOSAL",
+        "gap_duration_ns": 158000000,
+        "sleep_state": "deep"
+      },
+      "policy_id": "independent_sum",
+      "source_event_ids": [
+        "mo_1-2_FTP3_480000000"
+      ],
+      "start_ns": null,
+      "ue_id": "ue1"
+    },
+    {
+      "at_ns": 640000000,
+      "end_ns": null,
+      "energy_unit_ms": 450.0,
+      "hardware_group": "mr_sleep_transition",
+      "increment_id": "inc_sleep_transition_000004",
+      "metadata": {
+        "accounting": "one complete entry+exit transition per sleep gap ending in MR activity",
+        "evidence_status": "MIXED_RESEARCH_AND_COMPANY_PROPOSAL",
+        "gap_duration_ns": 158000000,
+        "sleep_state": "deep"
+      },
+      "policy_id": "independent_sum",
+      "source_event_ids": [
+        "mo_1-2_FTP3_640000000"
+      ],
+      "start_ns": null,
+      "ue_id": "ue1"
+    },
+    {
+      "at_ns": 800000000,
+      "end_ns": null,
+      "energy_unit_ms": 450.0,
+      "hardware_group": "mr_sleep_transition",
+      "increment_id": "inc_sleep_transition_000006",
+      "metadata": {
+        "accounting": "one complete entry+exit transition per sleep gap ending in MR activity",
+        "evidence_status": "MIXED_RESEARCH_AND_COMPANY_PROPOSAL",
+        "gap_duration_ns": 56428571,
+        "sleep_state": "deep"
+      },
+      "policy_id": "independent_sum",
+      "source_event_ids": [
+        "mo_1-2_FTP3_800000000"
+      ],
+      "start_ns": null,
+      "ue_id": "ue1"
+    }
+  ],
+  "intervals": [
+    {
+      "end_ns": 71429,
+      "interval_id": "int_LR_000000",
+      "metadata": {
+        "integration_owner": "W09",
+        "monitor_id": "DCP_RX",
+        "occasion_index": 0,
+        "source_action_id": "act-ue1-2_occasion_0"
+      },
+      "power_unit": 15.0,
+      "reason_event_id": "mo_1-2_FTP3_0",
+      "receiver_id": "LR",
+      "start_ns": 0,
+      "state": "light",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 500000,
+      "interval_id": "int_LR_000034",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_LR_71429"
+      },
+      "power_unit": 0.0,
+      "reason_event_id": "W09_LR_FLOOR",
+      "receiver_id": "LR",
+      "start_ns": 71429,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 571429,
+      "interval_id": "int_LR_000001",
+      "metadata": {
+        "integration_owner": "W09",
+        "monitor_id": "DCP_RX",
+        "occasion_index": 1,
+        "source_action_id": "act-ue1-2_occasion_1"
+      },
+      "power_unit": 15.0,
+      "reason_event_id": "mo_1-2_FTP3_0",
+      "receiver_id": "LR",
+      "start_ns": 500000,
+      "state": "light",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 160000000,
+      "interval_id": "int_LR_000035",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_LR_571429"
+      },
+      "power_unit": 0.0,
+      "reason_event_id": "W09_LR_FLOOR",
+      "receiver_id": "LR",
+      "start_ns": 571429,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 160071429,
+      "interval_id": "int_LR_000003",
+      "metadata": {
+        "integration_owner": "W09",
+        "monitor_id": "DCP_RX",
+        "occasion_index": 0,
+        "source_action_id": "act-ue1-13_occasion_0"
+      },
+      "power_unit": 15.0,
+      "reason_event_id": "mo_1-2_FTP3_160000000",
+      "receiver_id": "LR",
+      "start_ns": 160000000,
+      "state": "light",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 160500000,
+      "interval_id": "int_LR_000036",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_LR_160071429"
+      },
+      "power_unit": 0.0,
+      "reason_event_id": "W09_LR_FLOOR",
+      "receiver_id": "LR",
+      "start_ns": 160071429,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 160571429,
+      "interval_id": "int_LR_000004",
+      "metadata": {
+        "integration_owner": "W09",
+        "monitor_id": "DCP_RX",
+        "occasion_index": 1,
+        "source_action_id": "act-ue1-13_occasion_1"
+      },
+      "power_unit": 15.0,
+      "reason_event_id": "mo_1-2_FTP3_160000000",
+      "receiver_id": "LR",
+      "start_ns": 160500000,
+      "state": "light",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 320000000,
+      "interval_id": "int_LR_000037",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_LR_160571429"
+      },
+      "power_unit": 0.0,
+      "reason_event_id": "W09_LR_FLOOR",
+      "receiver_id": "LR",
+      "start_ns": 160571429,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 320071429,
+      "interval_id": "int_LR_000005",
+      "metadata": {
+        "integration_owner": "W09",
+        "monitor_id": "DCP_RX",
+        "occasion_index": 0,
+        "source_action_id": "act-ue1-22_occasion_0"
+      },
+      "power_unit": 15.0,
+      "reason_event_id": "mo_1-2_FTP3_320000000",
+      "receiver_id": "LR",
+      "start_ns": 320000000,
+      "state": "light",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 320500000,
+      "interval_id": "int_LR_000038",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_LR_320071429"
+      },
+      "power_unit": 0.0,
+      "reason_event_id": "W09_LR_FLOOR",
+      "receiver_id": "LR",
+      "start_ns": 320071429,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 320571429,
+      "interval_id": "int_LR_000006",
+      "metadata": {
+        "integration_owner": "W09",
+        "monitor_id": "DCP_RX",
+        "occasion_index": 1,
+        "source_action_id": "act-ue1-22_occasion_1"
+      },
+      "power_unit": 15.0,
+      "reason_event_id": "mo_1-2_FTP3_320000000",
+      "receiver_id": "LR",
+      "start_ns": 320500000,
+      "state": "light",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 480000000,
+      "interval_id": "int_LR_000039",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_LR_320571429"
+      },
+      "power_unit": 0.0,
+      "reason_event_id": "W09_LR_FLOOR",
+      "receiver_id": "LR",
+      "start_ns": 320571429,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 480071429,
+      "interval_id": "int_LR_000007",
+      "metadata": {
+        "integration_owner": "W09",
+        "monitor_id": "DCP_RX",
+        "occasion_index": 0,
+        "source_action_id": "act-ue1-31_occasion_0"
+      },
+      "power_unit": 15.0,
+      "reason_event_id": "mo_1-2_FTP3_480000000",
+      "receiver_id": "LR",
+      "start_ns": 480000000,
+      "state": "light",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 480500000,
+      "interval_id": "int_LR_000040",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_LR_480071429"
+      },
+      "power_unit": 0.0,
+      "reason_event_id": "W09_LR_FLOOR",
+      "receiver_id": "LR",
+      "start_ns": 480071429,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 480571429,
+      "interval_id": "int_LR_000008",
+      "metadata": {
+        "integration_owner": "W09",
+        "monitor_id": "DCP_RX",
+        "occasion_index": 1,
+        "source_action_id": "act-ue1-31_occasion_1"
+      },
+      "power_unit": 15.0,
+      "reason_event_id": "mo_1-2_FTP3_480000000",
+      "receiver_id": "LR",
+      "start_ns": 480500000,
+      "state": "light",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 640000000,
+      "interval_id": "int_LR_000041",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_LR_480571429"
+      },
+      "power_unit": 0.0,
+      "reason_event_id": "W09_LR_FLOOR",
+      "receiver_id": "LR",
+      "start_ns": 480571429,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 640071429,
+      "interval_id": "int_LR_000009",
+      "metadata": {
+        "integration_owner": "W09",
+        "monitor_id": "DCP_RX",
+        "occasion_index": 0,
+        "source_action_id": "act-ue1-43_occasion_0"
+      },
+      "power_unit": 15.0,
+      "reason_event_id": "mo_1-2_FTP3_640000000",
+      "receiver_id": "LR",
+      "start_ns": 640000000,
+      "state": "light",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 640500000,
+      "interval_id": "int_LR_000042",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_LR_640071429"
+      },
+      "power_unit": 0.0,
+      "reason_event_id": "W09_LR_FLOOR",
+      "receiver_id": "LR",
+      "start_ns": 640071429,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 640571429,
+      "interval_id": "int_LR_000010",
+      "metadata": {
+        "integration_owner": "W09",
+        "monitor_id": "DCP_RX",
+        "occasion_index": 1,
+        "source_action_id": "act-ue1-43_occasion_1"
+      },
+      "power_unit": 15.0,
+      "reason_event_id": "mo_1-2_FTP3_640000000",
+      "receiver_id": "LR",
+      "start_ns": 640500000,
+      "state": "light",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 800000000,
+      "interval_id": "int_LR_000043",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_LR_640571429"
+      },
+      "power_unit": 0.0,
+      "reason_event_id": "W09_LR_FLOOR",
+      "receiver_id": "LR",
+      "start_ns": 640571429,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 800071429,
+      "interval_id": "int_LR_000012",
+      "metadata": {
+        "integration_owner": "W09",
+        "monitor_id": "DCP_RX",
+        "occasion_index": 0,
+        "source_action_id": "act-ue1-57_occasion_0"
+      },
+      "power_unit": 15.0,
+      "reason_event_id": "mo_1-2_FTP3_800000000",
+      "receiver_id": "LR",
+      "start_ns": 800000000,
+      "state": "light",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 800500000,
+      "interval_id": "int_LR_000044",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_LR_800071429"
+      },
+      "power_unit": 0.0,
+      "reason_event_id": "W09_LR_FLOOR",
+      "receiver_id": "LR",
+      "start_ns": 800071429,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 800571429,
+      "interval_id": "int_LR_000013",
+      "metadata": {
+        "integration_owner": "W09",
+        "monitor_id": "DCP_RX",
+        "occasion_index": 1,
+        "source_action_id": "act-ue1-57_occasion_1"
+      },
+      "power_unit": 15.0,
+      "reason_event_id": "mo_1-2_FTP3_800000000",
+      "receiver_id": "LR",
+      "start_ns": 800500000,
+      "state": "light",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 960000000,
+      "interval_id": "int_LR_000045",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_LR_800571429"
+      },
+      "power_unit": 0.0,
+      "reason_event_id": "W09_LR_FLOOR",
+      "receiver_id": "LR",
+      "start_ns": 800571429,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 960071429,
+      "interval_id": "int_LR_000015",
+      "metadata": {
+        "integration_owner": "W09",
+        "monitor_id": "DCP_RX",
+        "occasion_index": 0,
+        "source_action_id": "act-ue1-68_occasion_0"
+      },
+      "power_unit": 15.0,
+      "reason_event_id": "mo_1-2_FTP3_960000000",
+      "receiver_id": "LR",
+      "start_ns": 960000000,
+      "state": "light",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 960500000,
+      "interval_id": "int_LR_000046",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_LR_960071429"
+      },
+      "power_unit": 0.0,
+      "reason_event_id": "W09_LR_FLOOR",
+      "receiver_id": "LR",
+      "start_ns": 960071429,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 960571429,
+      "interval_id": "int_LR_000016",
+      "metadata": {
+        "integration_owner": "W09",
+        "monitor_id": "DCP_RX",
+        "occasion_index": 1,
+        "source_action_id": "act-ue1-68_occasion_1"
+      },
+      "power_unit": 15.0,
+      "reason_event_id": "mo_1-2_FTP3_960000000",
+      "receiver_id": "LR",
+      "start_ns": 960500000,
+      "state": "light",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 1060000000,
+      "interval_id": "int_LR_000047",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_LR_960571429"
+      },
+      "power_unit": 0.0,
+      "reason_event_id": "W09_LR_FLOOR",
+      "receiver_id": "LR",
+      "start_ns": 960571429,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 2000000,
+      "interval_id": "int_MR_overlay_00000000",
+      "metadata": {
+        "concurrent_reason_event_ids": [
+          "mo_1-2_FTP3_0"
+        ],
+        "evidence_status": "ASSUMPTION",
+        "integration_owner": "W09",
+        "measurement_path": "non_EE",
+        "source_action_id": "act-ue1-1"
+      },
+      "power_unit": 120.0,
+      "reason_event_id": "mo_1-2_FTP3_0",
+      "receiver_id": "MR",
+      "start_ns": 0,
+      "state": "MEASUREMENT",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 3571429,
+      "interval_id": "int_MR_overlay_00000001",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_MR_2000000"
+      },
+      "power_unit": 45.0,
+      "reason_event_id": "W09_MR_SLEEP_FILL",
+      "receiver_id": "MR",
+      "start_ns": 2000000,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 11571429,
+      "interval_id": "int_MR_overlay_00000002",
+      "metadata": {
+        "concurrent_reason_event_ids": [
+          "WUS_EFFECTIVE"
+        ],
+        "integration_owner": "W09",
+        "source_action_id": "act-ue1-9"
+      },
+      "power_unit": 100.0,
+      "reason_event_id": "WUS_EFFECTIVE",
+      "receiver_id": "MR",
+      "start_ns": 3571429,
+      "state": "PDCCH",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 160000000,
+      "interval_id": "int_MR_overlay_00000003",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_MR_11571429"
+      },
+      "power_unit": 1.1,
+      "reason_event_id": "W09_MR_SLEEP_FILL",
+      "receiver_id": "MR",
+      "start_ns": 11571429,
+      "state": "deep",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 162000000,
+      "interval_id": "int_MR_overlay_00000004",
+      "metadata": {
+        "concurrent_reason_event_ids": [
+          "mo_1-2_FTP3_160000000"
+        ],
+        "evidence_status": "ASSUMPTION",
+        "integration_owner": "W09",
+        "measurement_path": "non_EE",
+        "source_action_id": "act-ue1-12"
+      },
+      "power_unit": 120.0,
+      "reason_event_id": "mo_1-2_FTP3_160000000",
+      "receiver_id": "MR",
+      "start_ns": 160000000,
+      "state": "MEASUREMENT",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 320000000,
+      "interval_id": "int_MR_overlay_00000005",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_MR_162000000"
+      },
+      "power_unit": 1.1,
+      "reason_event_id": "W09_MR_SLEEP_FILL",
+      "receiver_id": "MR",
+      "start_ns": 162000000,
+      "state": "deep",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 322000000,
+      "interval_id": "int_MR_overlay_00000006",
+      "metadata": {
+        "concurrent_reason_event_ids": [
+          "mo_1-2_FTP3_320000000"
+        ],
+        "evidence_status": "ASSUMPTION",
+        "integration_owner": "W09",
+        "measurement_path": "non_EE",
+        "source_action_id": "act-ue1-21"
+      },
+      "power_unit": 120.0,
+      "reason_event_id": "mo_1-2_FTP3_320000000",
+      "receiver_id": "MR",
+      "start_ns": 320000000,
+      "state": "MEASUREMENT",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 480000000,
+      "interval_id": "int_MR_overlay_00000007",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_MR_322000000"
+      },
+      "power_unit": 1.1,
+      "reason_event_id": "W09_MR_SLEEP_FILL",
+      "receiver_id": "MR",
+      "start_ns": 322000000,
+      "state": "deep",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 482000000,
+      "interval_id": "int_MR_overlay_00000008",
+      "metadata": {
+        "concurrent_reason_event_ids": [
+          "mo_1-2_FTP3_480000000"
+        ],
+        "evidence_status": "ASSUMPTION",
+        "integration_owner": "W09",
+        "measurement_path": "non_EE",
+        "source_action_id": "act-ue1-30"
+      },
+      "power_unit": 120.0,
+      "reason_event_id": "mo_1-2_FTP3_480000000",
+      "receiver_id": "MR",
+      "start_ns": 480000000,
+      "state": "MEASUREMENT",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 640000000,
+      "interval_id": "int_MR_overlay_00000009",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_MR_482000000"
+      },
+      "power_unit": 1.1,
+      "reason_event_id": "W09_MR_SLEEP_FILL",
+      "receiver_id": "MR",
+      "start_ns": 482000000,
+      "state": "deep",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 642000000,
+      "interval_id": "int_MR_overlay_00000010",
+      "metadata": {
+        "concurrent_reason_event_ids": [
+          "mo_1-2_FTP3_640000000"
+        ],
+        "evidence_status": "ASSUMPTION",
+        "integration_owner": "W09",
+        "measurement_path": "non_EE",
+        "source_action_id": "act-ue1-42"
+      },
+      "power_unit": 120.0,
+      "reason_event_id": "mo_1-2_FTP3_640000000",
+      "receiver_id": "MR",
+      "start_ns": 640000000,
+      "state": "MEASUREMENT",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 643571429,
+      "interval_id": "int_MR_overlay_00000011",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_MR_642000000"
+      },
+      "power_unit": 45.0,
+      "reason_event_id": "W09_MR_SLEEP_FILL",
+      "receiver_id": "MR",
+      "start_ns": 642000000,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 648571429,
+      "interval_id": "int_MR_overlay_00000012",
+      "metadata": {
+        "concurrent_reason_event_ids": [
+          "WUS_EFFECTIVE"
+        ],
+        "integration_owner": "W09",
+        "power_role": "PDCCH_PLUS_PDSCH",
+        "source_action_id": "act-ue1-50",
+        "tx_id": "tx:ue1:ue1.FTP3.p00000000:a1:643571429:0"
+      },
+      "power_unit": 300.0,
+      "reason_event_id": "WUS_EFFECTIVE",
+      "receiver_id": "MR",
+      "start_ns": 643571429,
+      "state": "PDSCH",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 743571429,
+      "interval_id": "int_MR_overlay_00000013",
+      "metadata": {
+        "concurrent_reason_event_ids": [
+          "WUS_EFFECTIVE"
+        ],
+        "integration_owner": "W09",
+        "source_action_id": "act-ue1-50"
+      },
+      "power_unit": 100.0,
+      "reason_event_id": "WUS_EFFECTIVE",
+      "receiver_id": "MR",
+      "start_ns": 648571429,
+      "state": "PDCCH",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 800000000,
+      "interval_id": "int_MR_overlay_00000014",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_MR_743571429"
+      },
+      "power_unit": 1.1,
+      "reason_event_id": "W09_MR_SLEEP_FILL",
+      "receiver_id": "MR",
+      "start_ns": 743571429,
+      "state": "deep",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 802000000,
+      "interval_id": "int_MR_overlay_00000015",
+      "metadata": {
+        "concurrent_reason_event_ids": [
+          "mo_1-2_FTP3_800000000"
+        ],
+        "evidence_status": "ASSUMPTION",
+        "integration_owner": "W09",
+        "measurement_path": "non_EE",
+        "source_action_id": "act-ue1-56"
+      },
+      "power_unit": 120.0,
+      "reason_event_id": "mo_1-2_FTP3_800000000",
+      "receiver_id": "MR",
+      "start_ns": 800000000,
+      "state": "MEASUREMENT",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 803571429,
+      "interval_id": "int_MR_overlay_00000016",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_MR_802000000"
+      },
+      "power_unit": 45.0,
+      "reason_event_id": "W09_MR_SLEEP_FILL",
+      "receiver_id": "MR",
+      "start_ns": 802000000,
+      "state": "micro",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 808571429,
+      "interval_id": "int_MR_overlay_00000017",
+      "metadata": {
+        "concurrent_reason_event_ids": [
+          "WUS_EFFECTIVE"
+        ],
+        "integration_owner": "W09",
+        "power_role": "PDCCH_PLUS_PDSCH",
+        "source_action_id": "act-ue1-64",
+        "tx_id": "tx:ue1:ue1.FTP3.p00000001:a2:803571429:0"
+      },
+      "power_unit": 300.0,
+      "reason_event_id": "WUS_EFFECTIVE",
+      "receiver_id": "MR",
+      "start_ns": 803571429,
+      "state": "PDSCH",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 903571429,
+      "interval_id": "int_MR_overlay_00000018",
+      "metadata": {
+        "concurrent_reason_event_ids": [
+          "WUS_EFFECTIVE"
+        ],
+        "integration_owner": "W09",
+        "source_action_id": "act-ue1-64"
+      },
+      "power_unit": 100.0,
+      "reason_event_id": "WUS_EFFECTIVE",
+      "receiver_id": "MR",
+      "start_ns": 808571429,
+      "state": "PDCCH",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 960000000,
+      "interval_id": "int_MR_overlay_00000019",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_MR_903571429"
+      },
+      "power_unit": 1.1,
+      "reason_event_id": "W09_MR_SLEEP_FILL",
+      "receiver_id": "MR",
+      "start_ns": 903571429,
+      "state": "deep",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 962000000,
+      "interval_id": "int_MR_overlay_00000020",
+      "metadata": {
+        "concurrent_reason_event_ids": [
+          "mo_1-2_FTP3_960000000"
+        ],
+        "evidence_status": "ASSUMPTION",
+        "integration_owner": "W09",
+        "measurement_path": "non_EE",
+        "source_action_id": "act-ue1-67"
+      },
+      "power_unit": 120.0,
+      "reason_event_id": "mo_1-2_FTP3_960000000",
+      "receiver_id": "MR",
+      "start_ns": 960000000,
+      "state": "MEASUREMENT",
+      "ue_id": "ue1"
+    },
+    {
+      "end_ns": 1060000000,
+      "interval_id": "int_MR_overlay_00000021",
+      "metadata": {
+        "integration_owner": "W09",
+        "source_action_id": "fill_MR_962000000"
+      },
+      "power_unit": 1.1,
+      "reason_event_id": "W09_MR_SLEEP_FILL",
+      "receiver_id": "MR",
+      "start_ns": 962000000,
+      "state": "deep",
+      "ue_id": "ue1"
+    }
+  ],
+  "measurement_calendar_sha256": "da82d152c9c4464abcb0adb9c6e3b6a1aca4f1da509382fc412f9ca822bf1aa6",
+  "metadata": {
+    "arbitration": [],
+    "case_definition": {
+      "case_group": "Case 1",
+      "case_id": "1-2",
+      "evidence_status": "MEETING_AGREEMENT",
+      "implementation_status": "ENABLED_ABSTRACT",
+      "locator": "B4787 R2",
+      "neighbor_measurement": "NOT_APPLICABLE",
+      "notes": "DCP is explicit on this row only.",
+      "serving_measurement": "NON_EE",
+      "source_id": "LOCAL-126",
+      "trigger": "C-DRX with DCP"
+    },
+    "case_id": "1-2",
+    "detection_assumption": {
+      "other_wus_probability": 0.0,
+      "probabilities": {
+        "far": 0.01,
+        "fdr": 0.01,
+        "mdr": 0.01
+      },
+      "scenario": "main",
+      "source_status": "ASSUMPTION"
+    },
+    "effective_increment_count": 4,
+    "effective_window": {
+      "drain_end_ns": 1060000000,
+      "end_ns": 960000000,
+      "pdb_ms": 100,
+      "start_ns": 320000000,
+      "warmup_end_ns": 320000000
+    },
+    "energy_policy": "shared_max",
+    "formal_claim_status": "ABSTRACT_NUMERICAL_DISCUSSION_ONLY",
+    "independent_verification": {
+      "bit_partition_ok": true,
+      "mismatches": [],
+      "status": "PASS",
+      "structural_valid": true
+    },
+    "integration_status": "W00_W01_W02_W03_W04_CONNECTED",
+    "options": {
+      "cdrx_offset_ns": 0,
+      "coupled_monitor_count": 2,
+      "coupled_monitor_spacing_ns": 500000,
+      "dcp_gap_ns": 3000000,
+      "dcp_rx_ns": 71429,
+      "drain_pdb_multiples": 1,
+      "ee_measurement_power_unit": 18.0,
+      "ee_transition_energy_per_edge_unit_ms": 15.0,
+      "energy_evidence_status": "MIXED_RESEARCH_AND_COMPANY_PROPOSAL",
+      "label": "case1_company_eval_v1",
+      "lr_dcp_power_unit": 15.0,
+      "lr_idle_power_unit": 0.0,
+      "lr_wus_power_unit": 15.0,
+      "measurement_cycle_ns": 160000000,
+      "measurement_duration_ns": 2000000,
+      "measurement_offset_ns": 0,
+      "mr_deep_sleep_power_unit": 1.1,
+      "mr_deep_transition_energy_unit_ms": 450.0,
+      "mr_deep_transition_time_ns": 20000000,
+      "mr_idle_power_unit": 1.1,
+      "mr_light_sleep_power_unit": 20.0,
+      "mr_light_transition_energy_unit_ms": 100.0,
+      "mr_light_transition_time_ns": 6000000,
+      "mr_measurement_power_unit": 120.0,
+      "mr_micro_sleep_power_unit": 45.0,
+      "mr_pdcch_only_power_unit": 100.0,
+      "mr_pdsch_power_unit": 300.0,
+      "service_rate_bits_per_ms": 800000,
+      "sleep_state_model": "gap_feasible",
+      "warmup_cdrx_cycles": 2,
+      "wus_offset_ns": 0
+    },
+    "policy_config": {
+      "case_id": "1-2",
+      "cdrx_cycle_ns": 160000000,
+      "cdrx_offset_ns": 0,
+      "company_abstraction_note": "R1-2603659 Table12 configuration comparison only; wake delays are capability hints for W01, not deep guarantees",
+      "company_deep_wake_delay_ns": 10000000,
+      "company_light_wake_delay_ns": 3000000,
+      "coupled_monitor_count": 2,
+      "coupled_monitor_spacing_ns": 500000,
+      "coupled_skip_fallback": true,
+      "coupling": "dcp",
+      "dcp_gap_ns": 3000000,
+      "dcp_rx_ns": 71429,
+      "deep_sleep_claim": false,
+      "evidence_status": "ASSUMPTION",
+      "gap_ns": 3000000,
+      "grid_ns": 500000,
+      "has_cdrx": true,
+      "has_dcp": true,
+      "has_wus": false,
+      "iat_ns": 100000000,
+      "iat_refresh_mode": "new_transmission",
+      "meas_ee": false,
+      "measurement_cycle_ns": 160000000,
+      "measurement_duration_ns": 2000000,
+      "measurement_offset_ns": 0,
+      "mo_offset_ns": 0,
+      "on_duration_ns": 8000000,
+      "policy_id": "company_r1_2603659",
+      "post_data_timer_ns": 8000000,
+      "traffic_profile": "FTP3",
+      "use_cdrx_on_grid": true,
+      "use_post_data_timer": false,
+      "use_wus_timer": false,
+      "wus_offset_ns": 0,
+      "wus_period_ns": 160000000,
+      "wus_rx_ns": 500000,
+      "wus_timer_ns": 8000000
+    },
+    "policy_id": "company_r1_2603659",
+    "profile_parameter_snapshot": {
+      "detection": {
+        "far": 0.01,
+        "fdr": 0.01,
+        "mdr": 0.01
+      },
+      "measurement": {
+        "cycle": 20,
+        "duration": 0.5,
+        "gap": 5,
+        "rx_duration": 0.5
+      },
+      "power": {
+        "deep": 1,
+        "light": 20,
+        "micro": 45,
+        "sharing_policy": "shared_max"
+      },
+      "traffic": {
+        "FTP3": {
+          "cdrx": [
+            160,
+            8,
+            100
+          ],
+          "iat": 200,
+          "packet_size": 500000
+        },
+        "IM": {
+          "cdrx": [
+            320,
+            8,
+            100
+          ],
+          "iat": 2000,
+          "packet_size": 100000
+        }
+      }
+    },
+    "raw_energy_w01": {
+      "energy_by_hardware_group": {
+        "ue1/mr_sleep_transition": 1800.0
+      },
+      "groups": [
+        {
+          "energy_unit_ms": 1800.0,
+          "hardware_group": "mr_sleep_transition",
+          "increment_count": 6,
+          "merged_count": 4,
+          "policy_id": "independent_sum",
+          "ue_id": "ue1"
+        }
+      ],
+      "increment_energy_unit_ms": 1800.0,
+      "merged_increments": [
+        {
+          "at_ns": 320000000,
+          "end_ns": null,
+          "energy_unit_ms": 450.0,
+          "hardware_group": "mr_sleep_transition",
+          "increment_id": "inc_sleep_transition_000002",
+          "metadata": {
+            "accounting": "one complete entry+exit transition per sleep gap ending in MR activity",
+            "evidence_status": "MIXED_RESEARCH_AND_COMPANY_PROPOSAL",
+            "gap_duration_ns": 158000000,
+            "sleep_state": "deep"
+          },
+          "policy_id": "independent_sum",
+          "source_event_ids": [
+            "mo_1-2_FTP3_320000000"
+          ],
+          "start_ns": null,
+          "ue_id": "ue1"
+        },
+        {
+          "at_ns": 480000000,
+          "end_ns": null,
+          "energy_unit_ms": 450.0,
+          "hardware_group": "mr_sleep_transition",
+          "increment_id": "inc_sleep_transition_000003",
+          "metadata": {
+            "accounting": "one complete entry+exit transition per sleep gap ending in MR activity",
+            "evidence_status": "MIXED_RESEARCH_AND_COMPANY_PROPOSAL",
+            "gap_duration_ns": 158000000,
+            "sleep_state": "deep"
+          },
+          "policy_id": "independent_sum",
+          "source_event_ids": [
+            "mo_1-2_FTP3_480000000"
+          ],
+          "start_ns": null,
+          "ue_id": "ue1"
+        },
+        {
+          "at_ns": 640000000,
+          "end_ns": null,
+          "energy_unit_ms": 450.0,
+          "hardware_group": "mr_sleep_transition",
+          "increment_id": "inc_sleep_transition_000004",
+          "metadata": {
+            "accounting": "one complete entry+exit transition per sleep gap ending in MR activity",
+            "evidence_status": "MIXED_RESEARCH_AND_COMPANY_PROPOSAL",
+            "gap_duration_ns": 158000000,
+            "sleep_state": "deep"
+          },
+          "policy_id": "independent_sum",
+          "source_event_ids": [
+            "mo_1-2_FTP3_640000000"
+          ],
+          "start_ns": null,
+          "ue_id": "ue1"
+        },
+        {
+          "at_ns": 800000000,
+          "end_ns": null,
+          "energy_unit_ms": 450.0,
+          "hardware_group": "mr_sleep_transition",
+          "increment_id": "inc_sleep_transition_000006",
+          "metadata": {
+            "accounting": "one complete entry+exit transition per sleep gap ending in MR activity",
+            "evidence_status": "MIXED_RESEARCH_AND_COMPANY_PROPOSAL",
+            "gap_duration_ns": 56428571,
+            "sleep_state": "deep"
+          },
+          "policy_id": "independent_sum",
+          "source_event_ids": [
+            "mo_1-2_FTP3_800000000"
+          ],
+          "start_ns": null,
+          "ue_id": "ue1"
+        }
+      ],
+      "state_energy_by_receiver": {
+        "ue1/LR": 8.57148,
+        "ue1/MR": 23573.171466199998
+      },
+      "state_energy_by_state": {
+        "MEASUREMENT": 960.0,
+        "PDCCH": 19000.0,
+        "PDSCH": 3000.0,
+        "deep": 471.7428562,
+        "light": 8.57148,
+        "micro": 141.42861
+      },
+      "state_energy_unit_ms": 23581.7429462,
+      "total_energy_unit_ms": 25381.7429462,
+      "valid": true,
+      "window": {
+        "duration_ns": 640000000,
+        "end_ns": 960000000,
+        "start_ns": 320000000
+      }
+    },
+    "raw_increment_count": 6,
+    "simulation_window": {
+      "drain_end_ns": 1060000000,
+      "end_ns": 1060000000,
+      "pdb_ms": 100,
+      "start_ns": 0,
+      "warmup_end_ns": 320000000
+    },
+    "sleep_feasibility_probe": {
+      "available_ns": 640000000,
+      "deep_claim_used_in_intervals": false,
+      "evaluated": [
+        {
+          "additional_energy_unit_ms": 0.0,
+          "cost_unit_ms": 12800.0,
+          "dwell_ns": 637000000,
+          "entry_ns": 0,
+          "exit_ns": 3000000,
+          "feasible": true,
+          "overhead_ns": 3000000,
+          "power_unit": 20.0,
+          "resync_ns": 0,
+          "state": "light",
+          "wake_feasible_in_window": true
+        },
+        {
+          "additional_energy_unit_ms": 450.0,
+          "cost_unit_ms": 1090.0,
+          "dwell_ns": 620000000,
+          "entry_ns": 10000000,
+          "exit_ns": 10000000,
+          "feasible": true,
+          "overhead_ns": 20000000,
+          "power_unit": 1.0,
+          "resync_ns": 0,
+          "state": "deep",
+          "wake_feasible_in_window": true
+        }
+      ],
+      "fallback_code": null,
+      "feasible": true,
+      "state": "deep"
+    },
+    "traffic_evidence_status": "RESEARCH_REFERENCE",
+    "traffic_formal_eligible": false,
+    "traffic_id": "FTP3",
+    "traffic_model_class": "poisson_fixed_size",
+    "traffic_parameter_snapshot": {
+      "arrival_quantization": "round_half_up_nearest_ns",
+      "mean_interarrival": 200,
+      "packet_size": 500000,
+      "pdb_ms": 100
+    },
+    "traffic_profile_id": "FTP3",
+    "w01_interval_audit": {
+      "codes": [],
+      "errors": [],
+      "groups": [
+        {
+          "closure": "CLOSED",
+          "covered_ns": 1060000000,
+          "errors": [],
+          "interval_count": 28,
+          "receiver_id": "LR",
+          "ue_id": "ue1",
+          "window_ns": 1060000000
+        },
+        {
+          "closure": "CLOSED",
+          "covered_ns": 1060000000,
+          "errors": [],
+          "interval_count": 22,
+          "receiver_id": "MR",
+          "ue_id": "ue1",
+          "window_ns": 1060000000
+        }
+      ],
+      "interval_count": 50,
+      "sum_duration_ns": 2120000000,
+      "valid": true,
+      "window": {
+        "duration_ns": 1060000000,
+        "end_ns": 1060000000,
+        "start_ns": 0
+      }
+    },
+    "w01_packet_ledger": {
+      "completed": 2,
+      "delivered_bits_total": 8000000,
+      "dropped": 0,
+      "packet_count": 2,
+      "pending": 0,
+      "per_packet": {
+        "ue1.FTP3.p00000000": {
+          "conservation_ok": true,
+          "delivered_bits": 4000000,
+          "dropped_bits": 0,
+          "remaining_bits": 0,
+          "size_bits": 4000000,
+          "status": "completed",
+          "ue_id": "ue1"
+        },
+        "ue1.FTP3.p00000001": {
+          "conservation_ok": true,
+          "delivered_bits": 4000000,
+          "dropped_bits": 0,
+          "remaining_bits": 0,
+          "size_bits": 4000000,
+          "status": "completed",
+          "ue_id": "ue1"
+        }
+      },
+      "tx_count": 2,
+      "valid": true
+    },
+    "w01_resource_audit": {
+      "errors": [],
+      "valid": true
+    }
+  },
+  "model_hash": "9c09a31957213209b8a4abaa7d1158665508c2b46297638d460a7c7d129aac12",
+  "outcomes": [
+    {
+      "arrival_ns": 513878732,
+      "completion_ns": 648571429,
+      "deadline_ns": 613878732,
+      "drop_ns": null,
+      "drop_reason": null,
+      "packet_id": "ue1.FTP3.p00000000",
+      "remaining_bits": 0,
+      "size_bits": 4000000,
+      "ue_id": "ue1"
+    },
+    {
+      "arrival_ns": 756522678,
+      "completion_ns": 808571429,
+      "deadline_ns": 856522678,
+      "drop_ns": null,
+      "drop_reason": null,
+      "packet_id": "ue1.FTP3.p00000001",
+      "remaining_bits": 0,
+      "size_bits": 4000000,
+      "ue_id": "ue1"
+    }
+  ],
+  "packets": [
+    {
+      "arrival_ns": 513878732,
+      "deadline_ns": 613878732,
+      "flow_id": "FTP3.u1.dl",
+      "frame_id": null,
+      "metadata": {
+        "arrival_error_bound_ns": 0.5,
+        "arrival_quantization": "round_half_up_nearest_ns",
+        "ip_mtu_bytes": 1500,
+        "ip_packet_count": 334,
+        "ip_payload_bits_sum": 4000000,
+        "mean_interarrival_ms": 200.0,
+        "model_class": "poisson_fixed_size",
+        "pdb_ms": 100.0,
+        "size_bytes": 500000.0,
+        "tb_count": 334,
+        "tb_max_bits": 868584,
+        "tb_payload_bits_sum": 4000000
+      },
+      "packet_id": "ue1.FTP3.p00000000",
+      "size_bits": 4000000,
+      "traffic_profile_id": "FTP3",
+      "ue_id": "ue1"
+    },
+    {
+      "arrival_ns": 756522678,
+      "deadline_ns": 856522678,
+      "flow_id": "FTP3.u1.dl",
+      "frame_id": null,
+      "metadata": {
+        "arrival_error_bound_ns": 0.5,
+        "arrival_quantization": "round_half_up_nearest_ns",
+        "ip_mtu_bytes": 1500,
+        "ip_packet_count": 334,
+        "ip_payload_bits_sum": 4000000,
+        "mean_interarrival_ms": 200.0,
+        "model_class": "poisson_fixed_size",
+        "pdb_ms": 100.0,
+        "size_bytes": 500000.0,
+        "tb_count": 334,
+        "tb_max_bits": 868584,
+        "tb_payload_bits_sum": 4000000
+      },
+      "packet_id": "ue1.FTP3.p00000001",
+      "size_bits": 4000000,
+      "traffic_profile_id": "FTP3",
+      "ue_id": "ue1"
+    }
+  ],
+  "profile_id": "sixg_case1_v1",
+  "run_id": "run_FTP3_1-2_case1_company_eval_v1_s707",
+  "seed": 707,
+  "summary": {
+    "baseline_id": "case_1_1",
+    "case": "1-2@case1_company_eval_v1",
+    "compare_fields": {
+      "avg_power_unit": 39.6589733534375,
+      "baseline_id": "case_1_1",
+      "case": "1-2@case1_company_eval_v1",
+      "end_ns": 960000000,
+      "energy_unit_ms": 25381.7429462,
+      "seed": 707,
+      "start_ns": 320000000,
+      "traffic_sha256": "6e8bf9c4e6373173dc64674bc5ea362a7743f2f248f21f9d54a8fbf4d63e3eb5",
+      "window_ns": 640000000
+    },
+    "contract_version": "1.0",
+    "detection": {
+      "ci_method": "wilson",
+      "confidence": 0.95,
+      "denominator_note": "H0/H1/H2 use independent denominators; SKIPPED excluded; target+other simultaneous is H1 only",
+      "far": {
+        "ci_high": 0.6244653702374747,
+        "ci_low": 0.036224108632430085,
+        "confidence": 0.95,
+        "k": 1,
+        "method": "wilson",
+        "n": 5,
+        "point": 0.2,
+        "reason": null,
+        "status": "OK",
+        "zero_error_one_sided_upper_95": null
+      },
+      "fdr": {
+        "ci_high": null,
+        "ci_low": null,
+        "confidence": 0.95,
+        "k": 0,
+        "method": "wilson",
+        "n": 0,
+        "point": null,
+        "reason": "n=0; no confidence interval",
+        "status": "NO_TRIALS",
+        "zero_error_one_sided_upper_95": null
+      },
+      "mdr": {
+        "ci_high": 0.6576197724933469,
+        "ci_low": 0.0,
+        "confidence": 0.95,
+        "k": 0,
+        "method": "wilson",
+        "n": 2,
+        "point": 0.0,
+        "reason": "observed zero errors; probability is not zero; see one-sided upper bound",
+        "status": "ZERO_ERRORS",
+        "zero_error_one_sided_upper_95": 0.7763932022500211
+      },
+      "n_H0": 5,
+      "n_H1": 2,
+      "n_H2": 0,
+      "skipped_H0": 0,
+      "skipped_H1": 0,
+      "skipped_H2": 0,
+      "skipped_total": 0
+    },
+    "energy": {
+      "avg_power_unit": 39.6589733534375,
+      "clipped_increment_count": 0,
+      "clipped_interval_count": 0,
+      "end_ns": 960000000,
+      "energy_by_hardware_group": {
+        "mr_sleep_transition": 1800.0
+      },
+      "energy_by_receiver": {
+        "LR": 8.57148,
+        "MR": 23573.171466199998
+      },
+      "energy_by_state": {
+        "MEASUREMENT": 960.0,
+        "PDCCH": 19000.0,
+        "PDSCH": 3000.0,
+        "deep": 471.7428562,
+        "light": 8.57148,
+        "micro": 141.42861
+      },
+      "energy_unit_ms": 25381.7429462,
+      "increment_energy_unit_ms": 1800.0,
+      "interval_energy_unit_ms": 23581.7429462,
+      "start_ns": 320000000,
+      "window_ns": 640000000
+    },
+    "experiment_id": "pathA_FTP3_1-2_case1_company_eval_v1",
+    "goodput": {
+      "cohort_only": true,
+      "definition": "completed payload bits with completion in [start_ns,end_ns) divided by window seconds; NOT UPT",
+      "reason": null,
+      "status": "OK",
+      "window_completed_bits": 8000000,
+      "window_completed_packets": 2,
+      "window_goodput_mbps": 12.5,
+      "window_ns": 640000000
+    },
+    "module": "W04",
+    "notes": [
+      "completion_rate is fixed-horizon delivery, not final reliability",
+      "pdb_ratio primary is pooled counts; seed mean is a separate field in multi-run aggregation",
+      "delay p90/p99 must distinguish pooled vs mean-run in multi-run aggregation",
+      "window_goodput_mbps is not UPT",
+      "drain energy is excluded from avg_power_unit"
+    ],
+    "packets": {
+      "arrived_count": 2,
+      "completion_rate": 1.0,
+      "completion_rate_reason": null,
+      "completion_rate_status": "OK",
+      "delay_mean_ms_delivered": 93.37072400000001,
+      "delay_p90_ms_run": 126.4283024,
+      "delay_p99_ms_run": 133.86625754000002,
+      "delay_reason": null,
+      "delay_sample_count": 2,
+      "delay_status": "OK",
+      "delivered_count": 2,
+      "delivered_delays_ms": [
+        134.692697,
+        52.048751
+      ],
+      "delivered_packet_ids": [
+        "ue1.FTP3.p00000000",
+        "ue1.FTP3.p00000001"
+      ],
+      "drain_delivered_count": 0,
+      "dropped_count": 0,
+      "dropped_packet_ids": [],
+      "pdb_eligible_count": 2,
+      "pdb_ns": 100000000,
+      "pdb_ratio": 0.5,
+      "pdb_reason": null,
+      "pdb_satisfied_count": 1,
+      "pdb_status": "OK",
+      "pending_count": 0,
+      "pending_packet_ids": [],
+      "right_censored_count": 0,
+      "right_censored_packet_ids": [],
+      "warmup_backlog_count": 0
+    },
+    "profile_id": "sixg_case1_v1",
+    "reason": null,
+    "seed": 707,
+    "status": "OK",
+    "traffic_sha256": "6e8bf9c4e6373173dc64674bc5ea362a7743f2f248f21f9d54a8fbf4d63e3eb5",
+    "upt": {
+      "reason": "UPT session definition (start/end, multi-packet burst, queue-idle rules) is not frozen by W00; field is null and must not be aliased to throughput_mbps or window_goodput_mbps",
+      "session_payload_bits": null,
+      "session_service_duration_ns": null,
+      "status": "NOT_DEFINED",
+      "upt_mbps": null
+    },
+    "validation": {
+      "counts": {
+        "errors": 0,
+        "intervals": 50,
+        "outcomes": 2,
+        "packets": 0,
+        "trials": 7,
+        "tx": 2
+      },
+      "errors": [],
+      "valid": true
+    },
+    "window": {
+      "drain": {
+        "end_ns": 1060000000,
+        "energy_excluded_from_power": true,
+        "start_ns": 960000000,
+        "window_ns": 100000000
+      },
+      "drain_end_ns": 1060000000,
+      "end_ns": 960000000,
+      "observation": {
+        "end_ns": 960000000,
+        "start_ns": 320000000,
+        "window_ns": 640000000
+      },
+      "pdb_ms": 100,
+      "pdb_ns": 100000000,
+      "start_ns": 320000000,
+      "warmup": {
+        "backlog_boundary_ns": 320000000,
+        "end_ns": 320000000,
+        "start_ns": 320000000
+      },
+      "warmup_end_ns": 320000000,
+      "window_ns": 640000000
+    }
+  },
+  "traffic_sha256": "6e8bf9c4e6373173dc64674bc5ea362a7743f2f248f21f9d54a8fbf4d63e3eb5",
+  "trials": [
+    {
+      "condition": "H0",
+      "metadata": {
+        "evidence_status": "ASSUMPTION",
+        "policy_delivery": "causal_frozen_at_mo_start"
+      },
+      "mo_end_ns": 571429,
+      "mo_start_ns": 0,
+      "outcome": "WAKE",
+      "source_profile_id": "sixg_case1_v1",
+      "trial_id": "trial_1-2_FTP3_0",
+      "ue_id": "ue1"
+    },
+    {
+      "condition": "H0",
+      "metadata": {
+        "evidence_status": "ASSUMPTION",
+        "policy_delivery": "causal_frozen_at_mo_start"
+      },
+      "mo_end_ns": 160571429,
+      "mo_start_ns": 160000000,
+      "outcome": "NO_WAKE",
+      "source_profile_id": "sixg_case1_v1",
+      "trial_id": "trial_1-2_FTP3_160000000",
+      "ue_id": "ue1"
+    },
+    {
+      "condition": "H0",
+      "metadata": {
+        "evidence_status": "ASSUMPTION",
+        "policy_delivery": "causal_frozen_at_mo_start"
+      },
+      "mo_end_ns": 320571429,
+      "mo_start_ns": 320000000,
+      "outcome": "NO_WAKE",
+      "source_profile_id": "sixg_case1_v1",
+      "trial_id": "trial_1-2_FTP3_320000000",
+      "ue_id": "ue1"
+    },
+    {
+      "condition": "H0",
+      "metadata": {
+        "evidence_status": "ASSUMPTION",
+        "policy_delivery": "causal_frozen_at_mo_start"
+      },
+      "mo_end_ns": 480571429,
+      "mo_start_ns": 480000000,
+      "outcome": "NO_WAKE",
+      "source_profile_id": "sixg_case1_v1",
+      "trial_id": "trial_1-2_FTP3_480000000",
+      "ue_id": "ue1"
+    },
+    {
+      "condition": "H1",
+      "metadata": {
+        "evidence_status": "ASSUMPTION",
+        "policy_delivery": "causal_frozen_at_mo_start"
+      },
+      "mo_end_ns": 640571429,
+      "mo_start_ns": 640000000,
+      "outcome": "WAKE",
+      "source_profile_id": "sixg_case1_v1",
+      "trial_id": "trial_1-2_FTP3_640000000",
+      "ue_id": "ue1"
+    },
+    {
+      "condition": "H1",
+      "metadata": {
+        "evidence_status": "ASSUMPTION",
+        "policy_delivery": "causal_frozen_at_mo_start"
+      },
+      "mo_end_ns": 800571429,
+      "mo_start_ns": 800000000,
+      "outcome": "WAKE",
+      "source_profile_id": "sixg_case1_v1",
+      "trial_id": "trial_1-2_FTP3_800000000",
+      "ue_id": "ue1"
+    },
+    {
+      "condition": "H0",
+      "metadata": {
+        "evidence_status": "ASSUMPTION",
+        "policy_delivery": "causal_frozen_at_mo_start"
+      },
+      "mo_end_ns": 960571429,
+      "mo_start_ns": 960000000,
+      "outcome": "NO_WAKE",
+      "source_profile_id": "sixg_case1_v1",
+      "trial_id": "trial_1-2_FTP3_960000000",
+      "ue_id": "ue1"
+    }
+  ],
+  "tx": [
+    {
+      "attempt": 1,
+      "end_ns": 648571429,
+      "metadata": {
+        "reason": "act-ue1-50",
+        "service_rate_bits_per_ms": 800000
+      },
+      "offset_bits": 0,
+      "packet_id": "ue1.FTP3.p00000000",
+      "payload_bits": 4000000,
+      "resource_ids": [
+        "MR-PDSCH"
+      ],
+      "segment_id": "ue1.FTP3.p00000000#seg0",
+      "start_ns": 643571429,
+      "success": true,
+      "tx_id": "tx:ue1:ue1.FTP3.p00000000:a1:643571429:0",
+      "ue_id": "ue1"
+    },
+    {
+      "attempt": 2,
+      "end_ns": 808571429,
+      "metadata": {
+        "reason": "act-ue1-64",
+        "service_rate_bits_per_ms": 800000
+      },
+      "offset_bits": 0,
+      "packet_id": "ue1.FTP3.p00000001",
+      "payload_bits": 4000000,
+      "resource_ids": [
+        "MR-PDSCH"
+      ],
+      "segment_id": "ue1.FTP3.p00000001#seg0",
+      "start_ns": 803571429,
+      "success": true,
+      "tx_id": "tx:ue1:ue1.FTP3.p00000001:a2:803571429:0",
+      "ue_id": "ue1"
+    }
+  ]
+}

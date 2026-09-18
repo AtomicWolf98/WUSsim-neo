@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.wus-next/contracts/1.0",
+  "title": "wus_next public contract v1",
+  "description": "Structural JSON Schema. validator.py adds cross-field, unit, evidence and ID semantics.",
+  "oneOf": [
+    {"$ref":"#/$defs/Packet"},
+    {"$ref":"#/$defs/Event"},
+    {"$ref":"#/$defs/RadioInterval"},
+    {"$ref":"#/$defs/EnergyIncrement"},
+    {"$ref":"#/$defs/TxRecord"},
+    {"$ref":"#/$defs/PacketOutcome"},
+    {"$ref":"#/$defs/DetectionTrial"},
+    {"$ref":"#/$defs/Action"}
+  ],
+  "$defs": {
+    "id": {"type":"string", "minLength":1, "pattern":"^[^\\s]+$"},
+    "nonnegativeInt": {"type":"integer", "minimum":0},
+    "metadata": {"type":"object"},
+    "Packet": {"type":"object", "additionalProperties":false, "required":["packet_id","ue_id","flow_id","arrival_ns","size_bits","deadline_ns","traffic_profile_id"], "properties":{
+      "packet_id":{"$ref":"#/$defs/id"}, "ue_id":{"$ref":"#/$defs/id"}, "flow_id":{"$ref":"#/$defs/id"}, "arrival_ns":{"$ref":"#/$defs/nonnegativeInt"}, "size_bits":{"$ref":"#/$defs/nonnegativeInt"}, "deadline_ns":{"$ref":"#/$defs/nonnegativeInt"}, "traffic_profile_id":{"$ref":"#/$defs/id"}, "frame_id":{"type":["string","null"]}, "metadata":{"$ref":"#/$defs/metadata"}
+    }},
+    "Event": {"type":"object", "additionalProperties":false, "required":["event_id","time_ns","kind","ue_id","payload","source_id"], "properties":{
+      "event_id":{"$ref":"#/$defs/id"}, "time_ns":{"$ref":"#/$defs/nonnegativeInt"}, "kind":{"$ref":"#/$defs/id"}, "ue_id":{"$ref":"#/$defs/id"}, "payload":{}, "source_id":{"$ref":"#/$defs/id"}, "metadata":{"$ref":"#/$defs/metadata"}
+    }},
+    "RadioInterval": {"type":"object", "additionalProperties":false, "required":["interval_id","ue_id","receiver_id","start_ns","end_ns","state","power_unit","reason_event_id"], "properties":{
+      "interval_id":{"$ref":"#/$defs/id"}, "ue_id":{"$ref":"#/$defs/id"}, "receiver_id":{"type":"string","enum":["MR","LR"]}, "start_ns":{"$ref":"#/$defs/nonnegativeInt"}, "end_ns":{"$ref":"#/$defs/nonnegativeInt"}, "state":{"$ref":"#/$defs/id"}, "power_unit":{"type":"number","minimum":0}, "reason_event_id":{"$ref":"#/$defs/id"}, "metadata":{"$ref":"#/$defs/metadata"}
+    }},
+    "EnergyIncrement": {"type":"object", "additionalProperties":false, "required":["increment_id","ue_id","start_ns","end_ns","energy_unit_ms","hardware_group","source_event_ids","policy_id"], "properties":{
+      "increment_id":{"$ref":"#/$defs/id"}, "ue_id":{"$ref":"#/$defs/id"}, "start_ns":{"type":["integer","null"],"minimum":0}, "end_ns":{"type":["integer","null"],"minimum":0}, "at_ns":{"type":["integer","null"],"minimum":0}, "energy_unit_ms":{"type":"number","minimum":0}, "hardware_group":{"$ref":"#/$defs/id"}, "source_event_ids":{"type":"array","items":{"$ref":"#/$defs/id"}}, "policy_id":{"type":"string","enum":["shared_max","serial","independent_sum"]}, "metadata":{"$ref":"#/$defs/metadata"}
+    }},
+    "TxRecord": {"type":"object", "additionalProperties":false, "required":["tx_id","ue_id","packet_id","segment_id","offset_bits","start_ns","end_ns","attempt","payload_bits","success","resource_ids"], "properties":{
+      "tx_id":{"$ref":"#/$defs/id"}, "ue_id":{"$ref":"#/$defs/id"}, "packet_id":{"$ref":"#/$defs/id"}, "segment_id":{"$ref":"#/$defs/id"}, "offset_bits":{"$ref":"#/$defs/nonnegativeInt"}, "start_ns":{"$ref":"#/$defs/nonnegativeInt"}, "end_ns":{"$ref":"#/$defs/nonnegativeInt"}, "attempt":{"type":"integer","minimum":1}, "payload_bits":{"$ref":"#/$defs/nonnegativeInt"}, "success":{"type":"boolean"}, "resource_ids":{"type":"array","items":{"$ref":"#/$defs/id"}}, "metadata":{"$ref":"#/$defs/metadata"}
+    }},
+    "PacketOutcome": {"type":"object", "additionalProperties":false, "required":["packet_id","ue_id","arrival_ns","size_bits","deadline_ns","completion_ns","drop_ns","drop_reason","remaining_bits"], "properties":{
+      "packet_id":{"$ref":"#/$defs/id"}, "ue_id":{"$ref":"#/$defs/id"}, "arrival_ns":{"$ref":"#/$defs/nonnegativeInt"}, "size_bits":{"$ref":"#/$defs/nonnegativeInt"}, "deadline_ns":{"$ref":"#/$defs/nonnegativeInt"}, "completion_ns":{"type":["integer","null"],"minimum":0}, "drop_ns":{"type":["integer","null"],"minimum":0}, "drop_reason":{"type":["string","null"]}, "remaining_bits":{"$ref":"#/$defs/nonnegativeInt"}, "metadata":{"$ref":"#/$defs/metadata"}
+    }},
+    "DetectionTrial": {"type":"object", "additionalProperties":false, "required":["trial_id","ue_id","mo_start_ns","mo_end_ns","condition","outcome","source_profile_id"], "properties":{
+      "trial_id":{"$ref":"#/$defs/id"}, "ue_id":{"$ref":"#/$defs/id"}, "mo_start_ns":{"$ref":"#/$defs/nonnegativeInt"}, "mo_end_ns":{"$ref":"#/$defs/nonnegativeInt"}, "condition":{"type":"string","enum":["H0","H1","H2"]}, "outcome":{"type":"string","enum":["WAKE","NO_WAKE","SKIPPED"]}, "source_profile_id":{"$ref":"#/$defs/id"}, "metadata":{"$ref":"#/$defs/metadata"}
+    }},
+    "Action": {"type":"object", "additionalProperties":false, "required":["action_id","time_ns","ue_id","kind","payload","caused_by"], "properties":{
+      "action_id":{"$ref":"#/$defs/id"}, "time_ns":{"$ref":"#/$defs/nonnegativeInt"}, "ue_id":{"$ref":"#/$defs/id"}, "kind":{"type":"string","enum":["REQUEST_MONITOR","REQUEST_SLEEP","START_TIMER","STOP_TIMER"]}, "payload":{}, "caused_by":{"$ref":"#/$defs/id"}, "metadata":{"$ref":"#/$defs/metadata"}
+    }}
+  }
+}
+

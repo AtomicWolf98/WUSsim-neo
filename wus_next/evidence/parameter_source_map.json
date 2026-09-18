@@ -1,0 +1,401 @@
+{
+  "map_version": "1.0",
+  "status_vocabulary": [
+    "NORMATIVE",
+    "MEETING_AGREEMENT",
+    "COMPANY_PROPOSAL",
+    "RESEARCH_REFERENCE",
+    "ASSUMPTION",
+    "PROXY",
+    "UNRESOLVED",
+    "TEST_ONLY"
+  ],
+  "sources": [
+    {
+      "source_id": "LOCAL-126",
+      "path": "doc/references/RAN1#126_ChairNotes(第10.6节WUS).txt",
+      "document_version": "RAN1#126 Chair Notes, extracted evidence",
+      "source_kind": "meeting_notes",
+      "acquisition_status": "LOCAL_ACQUIRED",
+      "sha256": "8df548b2d79ff328e42308aef50c575d2922abce69f0b66bcd9636e93eb78286",
+      "review_status": "REVIEWED_RELEVANT_SCOPE"
+    },
+    {
+      "source_id": "LOCAL-38840",
+      "path": "doc/references/TR38.840_v16.0.0_UE节能研究报告(功耗模型原始出处).txt",
+      "document_version": "TR 38.840 v16.0.0 extracted evidence",
+      "source_kind": "technical_report",
+      "acquisition_status": "LOCAL_ACQUIRED",
+      "sha256": "ffc580e068c146c313bddb28638e36366e2fc75814727dd54e497abab8933f49",
+      "review_status": "REVIEWED_RELEVANT_SCOPE"
+    },
+    {
+      "source_id": "LOCAL-38213",
+      "path": "doc/references/TS38.213_v19.4.0_物理层过程(含LP-WUS).txt",
+      "document_version": "TS 38.213 v19.4.0 extracted evidence",
+      "source_kind": "specification",
+      "acquisition_status": "LOCAL_ACQUIRED",
+      "sha256": "2e91220782ed516d3e1fab3b6b1450fc03abb17e2ffaed0830c42bfa806ea037",
+      "review_status": "REVIEWED_RELEVANT_SCOPE"
+    },
+    {
+      "source_id": "LOCAL-38321",
+      "path": "doc/references/TS38.321_v19.3.0_MAC规范(含LP-WUS流程).txt",
+      "document_version": "TS 38.321 v19.3.0 extracted evidence",
+      "source_kind": "specification",
+      "acquisition_status": "LOCAL_ACQUIRED",
+      "sha256": "8f9a5862344f1317dcddf4c3fc6a338a2489664e311209ed0acf9c7993a54c60",
+      "review_status": "REVIEWED_RELEVANT_SCOPE"
+    },
+    {
+      "source_id": "LOCAL-38331",
+      "path": "doc/references/TS38.331_v19.3.0_RRC规范(含LPWUS-Config).txt",
+      "document_version": "TS 38.331 v19.3.0 extracted evidence",
+      "source_kind": "specification",
+      "acquisition_status": "LOCAL_ACQUIRED",
+      "sha256": "e31ff6aef0ceb6ee62498778502c9b1923c917c1345d4f5f5da62c8ef15496bd",
+      "review_status": "REVIEWED_RELEVANT_SCOPE"
+    },
+    {
+      "source_id": "NEW-3659",
+      "path": "upgrade_materials/sources/R1-2603659.zip",
+      "document_version": "R1-2603659, May 2026, vivo",
+      "source_kind": "company_contribution",
+      "acquisition_status": "ACQUIRED_NOT_FULLY_REVIEWED",
+      "sha256": "776551d036997936df1d32d04de4ab45d8778782532676ddd46e7dd680c8a787",
+      "review_status": "REVIEWED_TABLE12_TABLE13_SCOPE"
+    },
+    {
+      "source_id": "NEW-3659-TEXT",
+      "path": "doc/references/R1-2603659.txt",
+      "document_version": "R1-2603659 extracted text",
+      "source_kind": "extracted_text",
+      "acquisition_status": "DERIVED_FROM_ACQUIRED_ZIP",
+      "sha256": "1166e48fcb02dde546036fb3946e28825007af6e7c9e6dada49fb853c6285300",
+      "review_status": "REVIEWED_TABLE12_TABLE13_SCOPE"
+    },
+    {
+      "source_id": "NEW-38211",
+      "path": "upgrade_materials/sources/TS38211_19_3_0.pdf",
+      "document_version": "TS 38.211 v19.3.0",
+      "source_kind": "specification",
+      "acquisition_status": "ACQUIRED_NOT_FULLY_REVIEWED",
+      "sha256": "5e497235251a2929f4e615495296a4b56c8d50ba8245f5c293a575b6a61770a7",
+      "review_status": "VERSION_SCOPE_ONLY"
+    },
+    {
+      "source_id": "NEW-38212",
+      "path": "upgrade_materials/sources/TS38212_19_3_0.pdf",
+      "document_version": "TS 38.212 v19.3.0",
+      "source_kind": "specification",
+      "acquisition_status": "ACQUIRED_NOT_FULLY_REVIEWED",
+      "sha256": "6e6ee5d10e3f6418e6d572da364ff249449ffea985b1d1236aa31c7ca18528f6",
+      "review_status": "VERSION_SCOPE_ONLY"
+    },
+    {
+      "source_id": "NEW-38304",
+      "path": "upgrade_materials/sources/TS38304_19_2_0.pdf",
+      "document_version": "TS 38.304 v19.2.0",
+      "source_kind": "specification",
+      "acquisition_status": "ACQUIRED_NOT_FULLY_REVIEWED",
+      "sha256": "a4e085c3b46050ed29ecfffb43d2f9127fceab1b55b74d46cea625075b2726f0",
+      "review_status": "VERSION_SCOPE_ONLY"
+    },
+    {
+      "source_id": "SOURCE-INDEX",
+      "path": "doc/references/project_inputs/SOURCE_INDEX_ZH.md",
+      "document_version": "source-index v1, 2026-09-15",
+      "source_kind": "project_index",
+      "acquisition_status": "LOCAL_ACQUIRED",
+      "sha256": "d58dc075fa4b0cda191872295c39d3c3f5049949fe2bb76e45daa139feb47f4b",
+      "review_status": "REVIEWED"
+    },
+    {
+      "source_id": "W00-TASK",
+      "path": "doc/references/project_inputs/W00_FOUNDATION.md",
+      "document_version": "W00 task contract, 2026-09-15",
+      "source_kind": "task_instruction",
+      "acquisition_status": "LOCAL_ACQUIRED",
+      "sha256": "39701cad70ce130b07233e6e3a39d0d72da11cab82b711a69f53c55135f7f863",
+      "review_status": "REVIEWED"
+    },
+    {
+      "source_id": "FIXTURE-CONTRACT",
+      "path": "doc/references/project_inputs/contract_examples.json",
+      "document_version": "contract examples v1",
+      "source_kind": "manual_fixture",
+      "acquisition_status": "LOCAL_ACQUIRED",
+      "sha256": "a6ffaa9dbf093df35ebb5b0edb4bb41099af7a5d3a390401fe503ea37a2dc9a3",
+      "review_status": "TEST_ONLY"
+    },
+    {
+      "source_id": "FIXTURE-ORACLE",
+      "path": "doc/references/project_inputs/oracle_cases.json",
+      "document_version": "oracle cases v1",
+      "source_kind": "manual_fixture",
+      "acquisition_status": "LOCAL_ACQUIRED",
+      "sha256": "3c34ce014d71e1063411438d7b797ef7d12878fc2f2a733aeb8521a07e2d89e1",
+      "review_status": "TEST_ONLY"
+    },
+    {
+      "source_id": "MISSING-R1-070674",
+      "path": "upgrade_materials/sources/R1-070674.zip",
+      "document_version": "R1-070674",
+      "source_kind": "company_contribution",
+      "acquisition_status": "UNAVAILABLE",
+      "sha256": null,
+      "review_status": "BLOCKED"
+    }
+  ],
+  "parameters": [
+    {
+      "parameter_id": "case.1-1_to_1-6.axes",
+      "path": "case_registry.cases[1-1..1-6]",
+      "value": "B4787 rows R1-R6",
+      "unit": null,
+      "source_id": "LOCAL-126",
+      "locator": "B4787 R1-R6",
+      "evidence_status": "MEETING_AGREEMENT",
+      "interpretation": "Case trigger and serving/neighbor measurement axes; these rows do not make Case 1-6 a DCP case.",
+      "valid_domain": "registered case matrix",
+      "profiles": [
+        "sixg_case1_v1"
+      ]
+    },
+    {
+      "parameter_id": "power.mr.micro",
+      "path": "parameters.power.mr.micro",
+      "value": 45,
+      "unit": "relative_power_unit",
+      "source_id": "LOCAL-38840",
+      "locator": "Table 18; mirrored in reviewed sim/params.py",
+      "evidence_status": "RESEARCH_REFERENCE",
+      "interpretation": "MR micro-sleep relative power used by the reviewed replay profile.",
+      "valid_domain": {
+        "min": 0
+      },
+      "profiles": [
+        "legacy_reviewed_v2",
+        "sixg_case1_v1"
+      ]
+    },
+    {
+      "parameter_id": "power.mr.light",
+      "path": "parameters.power.mr.light",
+      "value": 20,
+      "unit": "relative_power_unit",
+      "source_id": "LOCAL-38840",
+      "locator": "Table 18; mirrored in reviewed sim/params.py",
+      "evidence_status": "RESEARCH_REFERENCE",
+      "interpretation": "MR light-sleep relative power used by the reviewed replay profile.",
+      "valid_domain": {
+        "min": 0
+      },
+      "profiles": [
+        "legacy_reviewed_v2",
+        "sixg_case1_v1"
+      ]
+    },
+    {
+      "parameter_id": "power.mr.deep",
+      "path": "parameters.power.mr.deep",
+      "value": 1,
+      "unit": "relative_power_unit",
+      "source_id": "LOCAL-38840",
+      "locator": "Table 18; mirrored in reviewed sim/params.py",
+      "evidence_status": "RESEARCH_REFERENCE",
+      "interpretation": "MR deep-sleep relative power; deep is not automatically feasible for every gap.",
+      "valid_domain": {
+        "min": 0
+      },
+      "profiles": [
+        "legacy_reviewed_v2",
+        "sixg_case1_v1"
+      ]
+    },
+    {
+      "parameter_id": "time.lpwus_offset",
+      "path": "parameters.rel19.lpwus_time_offset",
+      "value": [
+        41,
+        592
+      ],
+      "unit": "0.125_ms_units",
+      "source_id": "LOCAL-38331",
+      "locator": "B28505-B28506 and B28589 R20-R21",
+      "evidence_status": "NORMATIVE",
+      "interpretation": "TS 38.331 range and unit; 41 means 5.125 ms and 592 means 74 ms.",
+      "valid_domain": {
+        "min": 41,
+        "max": 592,
+        "step": 1
+      },
+      "profiles": [
+        "company_r1_2603659_v1"
+      ]
+    },
+    {
+      "parameter_id": "traffic.ftp3.cdrx",
+      "path": "parameters.traffic.FTP3.cdrx",
+      "value": [
+        160,
+        8,
+        100
+      ],
+      "unit": "ms",
+      "source_id": "LOCAL-126",
+      "locator": "B4787 context and RAN1#123 baseline recorded in R1-2603659 B317",
+      "evidence_status": "MEETING_AGREEMENT",
+      "interpretation": "(cycle,on-duration,inactivity) for FTP3; not a PHY throughput claim.",
+      "valid_domain": {
+        "length": 3,
+        "min": 0
+      },
+      "profiles": [
+        "legacy_reviewed_v2",
+        "sixg_case1_v1"
+      ]
+    },
+    {
+      "parameter_id": "traffic.im.cdrx",
+      "path": "parameters.traffic.IM.cdrx",
+      "value": [
+        320,
+        8,
+        100
+      ],
+      "unit": "ms",
+      "source_id": "NEW-3659-TEXT",
+      "locator": "B12/B317",
+      "evidence_status": "MEETING_AGREEMENT",
+      "interpretation": "(cycle,on-duration,inactivity) for instant-message traffic.",
+      "valid_domain": {
+        "length": 3,
+        "min": 0
+      },
+      "profiles": [
+        "legacy_reviewed_v2",
+        "sixg_case1_v1"
+      ]
+    },
+    {
+      "parameter_id": "measurement.abstract",
+      "path": "parameters.measurement",
+      "value": {
+        "cycle_ms": 20,
+        "duration_ms": 0.5,
+        "gap_ms": 5,
+        "rx_duration_ms": 0.5
+      },
+      "unit": "ms",
+      "source_id": "W00-TASK",
+      "locator": "W00_FOUNDATION step 6; reviewed config_reviewed.yaml",
+      "evidence_status": "ASSUMPTION",
+      "interpretation": "Self-reported abstract measurement load; not a normative 20 ms SSB/RRM requirement.",
+      "valid_domain": {
+        "cycle_ms": {
+          "min": 0.5
+        },
+        "duration_ms": {
+          "min": 0.125
+        },
+        "gap_ms": {
+          "min": 0
+        },
+        "rx_duration_ms": {
+          "min": 0.125
+        }
+      },
+      "profiles": [
+        "legacy_reviewed_v2",
+        "sixg_case1_v1"
+      ]
+    },
+    {
+      "parameter_id": "wus.period.default",
+      "path": "parameters.wus.default_period",
+      "value": "traffic_profile.cdrx_cycle_ms",
+      "unit": "derived_ms",
+      "source_id": "W00-TASK",
+      "locator": "W00_FOUNDATION step 6",
+      "evidence_status": "ASSUMPTION",
+      "interpretation": "Default WUS period follows the selected traffic DRX cycle; it is not fixed to the 20 ms measurement cycle.",
+      "valid_domain": "registered traffic profile reference",
+      "profiles": [
+        "sixg_case1_v1"
+      ]
+    },
+    {
+      "parameter_id": "company.wus.timer",
+      "path": "parameters.company_r1_2603659.wus_timer",
+      "value": 8,
+      "unit": "ms",
+      "source_id": "NEW-3659-TEXT",
+      "locator": "B326, Table 12",
+      "evidence_status": "COMPANY_PROPOSAL",
+      "interpretation": "Company evaluation configuration; not a universal 6G or Rel-19 timer.",
+      "valid_domain": {
+        "min": 0
+      },
+      "profiles": [
+        "company_r1_2603659_v1"
+      ]
+    },
+    {
+      "parameter_id": "company.wus.period",
+      "path": "parameters.company_r1_2603659.wus_period",
+      "value": 10,
+      "unit": "slot",
+      "source_id": "NEW-3659-TEXT",
+      "locator": "B326, Table 12",
+      "evidence_status": "COMPANY_PROPOSAL",
+      "interpretation": "10-slot WUS MO period in the company configuration; SCS mapping must be supplied by the consumer profile.",
+      "valid_domain": {
+        "min": 1
+      },
+      "profiles": [
+        "company_r1_2603659_v1"
+      ]
+    },
+    {
+      "parameter_id": "company.wake_delay",
+      "path": "parameters.company_r1_2603659.wake_delay",
+      "value": {
+        "light_ms": 3,
+        "deep_ms": 10
+      },
+      "unit": "ms",
+      "source_id": "NEW-3659-TEXT",
+      "locator": "B326, Table 12",
+      "evidence_status": "COMPANY_PROPOSAL",
+      "interpretation": "Reported light/deep wake delays, not a complete device transition model.",
+      "valid_domain": {
+        "light_ms": {
+          "min": 0
+        },
+        "deep_ms": {
+          "min": 0
+        }
+      },
+      "profiles": [
+        "company_r1_2603659_v1"
+      ]
+    },
+    {
+      "parameter_id": "voip.formal_source",
+      "path": "traffic_profiles.VoIP.formal_eligible",
+      "value": false,
+      "unit": null,
+      "source_id": "MISSING-R1-070674",
+      "locator": "SOURCE_INDEX_ZH.md section 4; download_manifest status UNAVAILABLE",
+      "evidence_status": "UNRESOLVED",
+      "interpretation": "Formal AMR VoIP remains disabled until the cited original is acquired and reviewed.",
+      "valid_domain": [
+        false
+      ],
+      "profiles": [
+        "legacy_reviewed_v2"
+      ]
+    }
+  ]
+}

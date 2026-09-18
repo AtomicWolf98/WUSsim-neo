@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wus-neo"
+version = "1.0.0"
+description = "Clean single-UE 6G DL-WUS Case 1-1 to 1-6 simulation project"
+requires-python = ">=3.11,<3.13"
+dependencies = ["numpy==2.2.6"]
+
+[tool.setuptools.packages.find]
+include = ["wus_next*"]
+
+[tool.setuptools.package-data]
+wus_next = [
+  "contracts/*.md",
+  "contracts/schemas/*.json",
+  "profiles/*.json",
+  "evidence/*.json",
+  "traffic/profiles/*.json"
+]

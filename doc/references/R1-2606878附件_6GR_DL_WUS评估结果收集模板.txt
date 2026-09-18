@@ -1,0 +1,346 @@
+SHEET IDLE_WUS rows=382290 cols=41
+A1=Company | B1=Tdoc | C1=Case_ID | D1=wake_up_method | E1=Serving cell measurement | F1=Neighbor cell measurement | G1=Cell identification | H1=iDRX_Cycle_s | I1=WUS_Rx | J1=non-EE_Rx | K1=Traffic: effective UE paging rate | L1=R_E_REF
+(per UE paging rate) | M1=N_UEs_Group | N1=N_Groups | O1=Traffic note | P1=SSB periodiicty [ms] | Q1=Number of SSB repetiton per period | R1=
+Neighbor_RRM_Relaxation_x | S1=Describ cell measurement/search details, if any | T1=WUS_Period_s | U1=WUS_bandwidth_MHz | V1=Number of WUS OFDM symbols | W1=FAR  | X1=FDR  | Y1=Sleep_Power  when DL WUS is monitored 
+[unit] | Z1=ramp-up/down energy per transition[unit*ms] | AA1=EE processing power for WUS reception[unit] | AB1=EE processing power for serving cell measurement[unit] | AC1=EE processing power for Neighbor cell measurement [unit] | AD1=EE processing power for combined search and measurement [unit] | AE1=EE processing: Synchronous or Asynchronous neighbor cell | AF1=Non-EE processing: Number of SSB before PO | AG1=Non-EE processing power serving cell measurement [unit] | AH1=Non-EE processing power Neighbor cell measurement [unit] | AI1=Non-EE processing power for combined search and measurement  | AJ1=non-EE processing: Synchronous or Asynchronous neighbor cell | AK1=Relative Power Consumption of the case [unit]  | AL1=Power saving gain [%] | AM1=Baseline schemes used for comparison | AN1=Baseline case ID used for comparison | AO1=Additional_Notes
+A2=Required company | B2=Required R1 number | C2=Required unique ID | D2=e.g., PEI, DL WUS, IDRX only | E2=EE/non-EE/NA | F2=EE/non-EE/NA | G2=EE/non-EE/NA
+note: once per 25 IDRX cycle | I2=e.g., 1 or 2 | J2=e.g., 1/2/4 | K2=R_G = 1 - (1 - R_E)^N, where N is the number of UEs in the group
+note: without taking FAR into account | L2=1/0.1/0.01/0.001% | M2=i.e., UE number per group | N2=number of group | O2=any details of traffic: e.g., number of UE per cell, per cell or per area paging, area size | R2=1/4/16/NA etc | T2=DL WUS Monitoring period | U2=e.g., 5MHz/10MHz | V2=e.g., 2,3,4,5,6,7 .etc | W2=1/5/10% LLS | X2=1/5/10% LLS | Y2=e.g., 
+0.15 for ultra-deep sleep
+1.1 or 1 for deep sleep
+20 for light sleep
+45 for micro sleep | Z2=from sleep state to active state | AC2=e.g.,
+18 for 1Rx and N=4 cell
+22.5 for 1Rx and N=8 cells
+22.5 for 2Rx and N=4 cell
+31.5 for 2Rx and N=8 cells | AD2=note:once per 25 IDRX cycle | AE2=e.g., Synchronous or Asynchronous | AF2=1, if the MR sync/re-sync is used, the value here is equal to the number of assumed SSB in MR sync/re-sync time.
+Note:including assumed SSB for PEI sync if PEI is used | AI2=note:once per 25 IDRX cycle | AJ2=e.g., Synchronous or Asynchronous | AK2= Power value per slot: relative power consumption averaged over IDRX cycle | AM2=provide any description of the baseline configuration, e.g., 
+IDRX, IDRX w/ PEI
+ | AN2=note: Case_ID in C column
+AM3==IF(OR(AK3="",AL3="",AK3=0),"",(AK3-AL3)/AK3)
+A4=XXX | B4=R1-260XXXX | C4=XXX-1 | D4=DL WUS | E4=EE | F4=non-EE | G4=NA | H4=1.28 | I4=2 | J4=2 | K4=0.0377 | L4=0.001 | M4=28 | N4=32 | O4=per cell paging | P4=80 | Q4=2 | R4=NA | T4=1.28 | U4=5MHz | V4=5 | W4=0.01 | Y4=1.1 | Z4=450 | AA4=12 | AB4=21 | AC4=22.5 | AF4=3 | AG4=56 | AH4=78.4 | AJ4=asynchronous | AL4=0.2538 | AM4=PEI
+A5=XXX | B5=R1-260XXXX | C5=XXX-2 | D5=DL WUS | E5=EE | F5=non-EE | G5=non-EE | H5=1.28 | I5=2 | J5=2 | K5=0.01 | O5=per cell paging | P5=80 | Q5=2 | R5=NA | S5=Cell identification is performed by non-EE per 25 I-DRX cycle | T5=1.28 | U5=10MHz | V5=6 | W5=0 | Y5=1.1 | Z5=450 | AA5=12 | AB5=21 | AC5=22.5 | AF5=3 | AG5=56 | AH5=78.4 | AI5=95.2 | AJ5=asynchronous | AL5=0.3131 | AM5=IDRX
+AM6==IF(OR(AK6="",AL6="",AK6=0),"",(AK6-AL6)/AK6)
+AM7==IF(OR(AK7="",AL7="",AK7=0),"",(AK7-AL7)/AK7)
+AM8==IF(OR(AK8="",AL8="",AK8=0),"",(AK8-AL8)/AK8)
+AM9==IF(OR(AK9="",AL9="",AK9=0),"",(AK9-AL9)/AK9)
+AM10==IF(OR(AK10="",AL10="",AK10=0),"",(AK10-AL10)/AK10)
+AM11==IF(OR(AK11="",AL11="",AK11=0),"",(AK11-AL11)/AK11)
+AM12==IF(OR(AK12="",AL12="",AK12=0),"",(AK12-AL12)/AK12)
+AM13==IF(OR(AK13="",AL13="",AK13=0),"",(AK13-AL13)/AK13)
+AM14==IF(OR(AK14="",AL14="",AK14=0),"",(AK14-AL14)/AK14)
+AM15==IF(OR(AK15="",AL15="",AK15=0),"",(AK15-AL15)/AK15)
+AM16==IF(OR(AK16="",AL16="",AK16=0),"",(AK16-AL16)/AK16)
+AM17==IF(OR(AK17="",AL17="",AK17=0),"",(AK17-AL17)/AK17)
+AM18==IF(OR(AK18="",AL18="",AK18=0),"",(AK18-AL18)/AK18)
+AM19==IF(OR(AK19="",AL19="",AK19=0),"",(AK19-AL19)/AK19)
+AM20==IF(OR(AK20="",AL20="",AK20=0),"",(AK20-AL20)/AK20)
+AM21==IF(OR(AK21="",AL21="",AK21=0),"",(AK21-AL21)/AK21)
+AM22==IF(OR(AK22="",AL22="",AK22=0),"",(AK22-AL22)/AK22)
+AM23==IF(OR(AK23="",AL23="",AK23=0),"",(AK23-AL23)/AK23)
+AM24==IF(OR(AK24="",AL24="",AK24=0),"",(AK24-AL24)/AK24)
+AM25==IF(OR(AK25="",AL25="",AK25=0),"",(AK25-AL25)/AK25)
+AM26==IF(OR(AK26="",AL26="",AK26=0),"",(AK26-AL26)/AK26)
+AM27==IF(OR(AK27="",AL27="",AK27=0),"",(AK27-AL27)/AK27)
+AM28==IF(OR(AK28="",AL28="",AK28=0),"",(AK28-AL28)/AK28)
+AM29==IF(OR(AK29="",AL29="",AK29=0),"",(AK29-AL29)/AK29)
+AM30==IF(OR(AK30="",AL30="",AK30=0),"",(AK30-AL30)/AK30)
+AM31==IF(OR(AK31="",AL31="",AK31=0),"",(AK31-AL31)/AK31)
+AM32==IF(OR(AK32="",AL32="",AK32=0),"",(AK32-AL32)/AK32)
+AM33==IF(OR(AK33="",AL33="",AK33=0),"",(AK33-AL33)/AK33)
+AM34==IF(OR(AK34="",AL34="",AK34=0),"",(AK34-AL34)/AK34)
+AM35==IF(OR(AK35="",AL35="",AK35=0),"",(AK35-AL35)/AK35)
+AM36==IF(OR(AK36="",AL36="",AK36=0),"",(AK36-AL36)/AK36)
+AM37==IF(OR(AK37="",AL37="",AK37=0),"",(AK37-AL37)/AK37)
+AM38==IF(OR(AK38="",AL38="",AK38=0),"",(AK38-AL38)/AK38)
+AM39==IF(OR(AK39="",AL39="",AK39=0),"",(AK39-AL39)/AK39)
+AM40==IF(OR(AK40="",AL40="",AK40=0),"",(AK40-AL40)/AK40)
+AM41==IF(OR(AK41="",AL41="",AK41=0),"",(AK41-AL41)/AK41)
+AM42==IF(OR(AK42="",AL42="",AK42=0),"",(AK42-AL42)/AK42)
+AM43==IF(OR(AK43="",AL43="",AK43=0),"",(AK43-AL43)/AK43)
+AM44==IF(OR(AK44="",AL44="",AK44=0),"",(AK44-AL44)/AK44)
+AM45==IF(OR(AK45="",AL45="",AK45=0),"",(AK45-AL45)/AK45)
+AM46==IF(OR(AK46="",AL46="",AK46=0),"",(AK46-AL46)/AK46)
+AM47==IF(OR(AK47="",AL47="",AK47=0),"",(AK47-AL47)/AK47)
+AM48==IF(OR(AK48="",AL48="",AK48=0),"",(AK48-AL48)/AK48)
+AM49==IF(OR(AK49="",AL49="",AK49=0),"",(AK49-AL49)/AK49)
+AM50==IF(OR(AK50="",AL50="",AK50=0),"",(AK50-AL50)/AK50)
+AM51==IF(OR(AK51="",AL51="",AK51=0),"",(AK51-AL51)/AK51)
+AM52==IF(OR(AK52="",AL52="",AK52=0),"",(AK52-AL52)/AK52)
+AM53==IF(OR(AK53="",AL53="",AK53=0),"",(AK53-AL53)/AK53)
+AM54==IF(OR(AK54="",AL54="",AK54=0),"",(AK54-AL54)/AK54)
+AM55==IF(OR(AK55="",AL55="",AK55=0),"",(AK55-AL55)/AK55)
+AM56==IF(OR(AK56="",AL56="",AK56=0),"",(AK56-AL56)/AK56)
+AM57==IF(OR(AK57="",AL57="",AK57=0),"",(AK57-AL57)/AK57)
+AM58==IF(OR(AK58="",AL58="",AK58=0),"",(AK58-AL58)/AK58)
+AM59==IF(OR(AK59="",AL59="",AK59=0),"",(AK59-AL59)/AK59)
+AM60==IF(OR(AK60="",AL60="",AK60=0),"",(AK60-AL60)/AK60)
+AM61==IF(OR(AK61="",AL61="",AK61=0),"",(AK61-AL61)/AK61)
+AM62==IF(OR(AK62="",AL62="",AK62=0),"",(AK62-AL62)/AK62)
+AM63==IF(OR(AK63="",AL63="",AK63=0),"",(AK63-AL63)/AK63)
+AM64==IF(OR(AK64="",AL64="",AK64=0),"",(AK64-AL64)/AK64)
+AM65==IF(OR(AK65="",AL65="",AK65=0),"",(AK65-AL65)/AK65)
+AM66==IF(OR(AK66="",AL66="",AK66=0),"",(AK66-AL66)/AK66)
+AM67==IF(OR(AK67="",AL67="",AK67=0),"",(AK67-AL67)/AK67)
+AM68==IF(OR(AK68="",AL68="",AK68=0),"",(AK68-AL68)/AK68)
+AM69==IF(OR(AK69="",AL69="",AK69=0),"",(AK69-AL69)/AK69)
+AM70==IF(OR(AK70="",AL70="",AK70=0),"",(AK70-AL70)/AK70)
+AM71==IF(OR(AK71="",AL71="",AK71=0),"",(AK71-AL71)/AK71)
+AM72==IF(OR(AK72="",AL72="",AK72=0),"",(AK72-AL72)/AK72)
+AM73==IF(OR(AK73="",AL73="",AK73=0),"",(AK73-AL73)/AK73)
+AM74==IF(OR(AK74="",AL74="",AK74=0),"",(AK74-AL74)/AK74)
+AM75==IF(OR(AK75="",AL75="",AK75=0),"",(AK75-AL75)/AK75)
+AM76==IF(OR(AK76="",AL76="",AK76=0),"",(AK76-AL76)/AK76)
+AM77==IF(OR(AK77="",AL77="",AK77=0),"",(AK77-AL77)/AK77)
+AM78==IF(OR(AK78="",AL78="",AK78=0),"",(AK78-AL78)/AK78)
+AM79==IF(OR(AK79="",AL79="",AK79=0),"",(AK79-AL79)/AK79)
+AM80==IF(OR(AK80="",AL80="",AK80=0),"",(AK80-AL80)/AK80)
+AM81==IF(OR(AK81="",AL81="",AK81=0),"",(AK81-AL81)/AK81)
+AM82==IF(OR(AK82="",AL82="",AK82=0),"",(AK82-AL82)/AK82)
+AM83==IF(OR(AK83="",AL83="",AK83=0),"",(AK83-AL83)/AK83)
+AM84==IF(OR(AK84="",AL84="",AK84=0),"",(AK84-AL84)/AK84)
+AM85==IF(OR(AK85="",AL85="",AK85=0),"",(AK85-AL85)/AK85)
+AM86==IF(OR(AK86="",AL86="",AK86=0),"",(AK86-AL86)/AK86)
+AM87==IF(OR(AK87="",AL87="",AK87=0),"",(AK87-AL87)/AK87)
+AM88==IF(OR(AK88="",AL88="",AK88=0),"",(AK88-AL88)/AK88)
+AM89==IF(OR(AK89="",AL89="",AK89=0),"",(AK89-AL89)/AK89)
+AM90==IF(OR(AK90="",AL90="",AK90=0),"",(AK90-AL90)/AK90)
+SHEET CONNECTED_WUS rows=316 cols=51
+A1=Company | B1=Tdoc | C1=Case_ID | D1=wake_up_method | E1=Serving cell RRM measurement | F1=Serving cell RLM measurement | G1=Neighbor cell measurement | H1=Cell identification | I1=L1 measurement | J1=CDRX_Cycle_ms | K1=CDRX_OnDuration_ms | L1=CDRX_IAT_ms | M1=WUS_Cycle_ms | N1= Dominant Sleep_state_when DL WUS is monitored | O1=WUS_Rx | P1=WUS_bandwidth_MHz | Q1=Number of WUS OFDM symbols | R1=FAR | S1=FDR | T1=WUS additional notes | U1=DCP_Rx | V1=DCP_Monitoring_Power | W1=DCP additional notes | X1=Traffic_Model | Y1=Delay budget | Z1=Traffic Parameters  | AA1=other Power Saving scheme assumptions | AB1=SSB periodiicty [ms] | AC1=RRM measurement cycle [ms] | AD1=RLM measurement cycle [ms] | AE1=Number of neighbor cells | AF1=Cell identification period [ms] | AG1=Describ cell measurement/search details, if any | AH1=Sleep_Power
+[unit] | AI1=ramp-up/down energy [unit*ms] | AJ1=EE processing power for WUS reception[unit] | AK1=EE processing power for serving cell RRM/RLM measurement[unit] | AL1=EE processing power for Neighbor cell measurement [unit] | AM1=EE processing power for combined search and measurement [unit] | AN1=Non-EE processing power serving cell RRM/RLM measurement [unit] | AO1=Non-EE processing power Neighbor cell measurement [unit] | AP1=Non-EE processing power for combined search and measurement [unit] | AQ1=Relative Power Consumption[unit]  | AR1=Power saving gain [%] | AS1=Baseline schemes used for comparison | AT1=Baseline case ID used for comparison | AU1=Delay budget satisfaction rate | AV1=UPT  [Mbps] | AW1=UPT gain [%], for eMBB/FTP3 only | AX1=Deployment scenarios e.g., indoor, dense urban | AY1=Additional_Notes
+A2=Required | D2=e.g., CDRX, DCP, WUS cycle equal to CDRX cycle, WUS cycle shorter than CDRX cycle, WUS without CDRX cycle | E2=EE/non-EE/not considered
+ | F2=EE/non-EE/not considered
+ | G2=EE/non-EE/not considered
+ | H2=EE/non-EE/not considered
+note: once per 5 CDRX cycle | I2=e.g., Y/N
+whether L1 measurement is assumed | J2=e.g., 40/160/320 ms
+refer to TR 38.840 | K2=e.g., 4/8/10 ms
+refer to TR 38.840 | L2=e.g., 10/25/40/80/100/80/200 ms
+refer to TR 38.840 | M2=Configured cycle | N2=e.g., deep/light/micro | O2=e.g., 1/2 | P2=e.g., 5MHz/10MHz | Q2=e.g., 2,3,4,5,6,7 .etc | R2=1/5/10% | S2=1/5/10% | T2=Please fill in detailed notes if any | U2=e.g., 1/2/4
+Rx count | V2=Relative power | W2=1. please fill in detailed notes if there is other assumptions, e.g., PDCCH BD number, BW, scaling method and factors | X2=e.g., FTP3/IM/XR | Z2=e.g., for FTP/IM: packet size, mean inter-arrival time
+for XR: frame rate, data rate, jitter range, and etc if needed. | AA2=e.g., PDCCH skipping/SSSG… | AC2=e.g., 40/160ms
+
+note: empty if not considered | AD2=e.g., 40/160ms
+
+note: empty if not considered | AE2=e.g., 4/8
+
+note: empty if not considered | AF2=e.g., 160ms
+
+note: once per 5 CDRX cycle
+note: empty if not considered | AG2=note: empty if not considered | AK2=e.g., 21/15
+
+note: empty if not considered | AL2=e.g., 25.2/31.5
+
+note: empty if not considered | AM2=e.g., 27.3/33.6
+
+note: empty if not considered | AN2=e.g., 100
+
+note: empty if not considered | AO2=e.g., 120/150
+
+note: empty if not considered | AP2=e.g., 170/200
+
+note: empty if not considered | AQ2= 1.power value per slot: relative power consumption averaged over CDRX cycle | AS2=1, provide any description of the baseline configuration, e.g., 
+CDRX, DCP, WUS cycle equal to CDRX cycle, WUS cycle shorter than CDRX cycle, WUS without CDRX cycle | AT2=note: Case_ID in C column
+AS3==IF(OR(AQ3="",AR3="",AQ3=0),"",(AQ3-AR3)/AQ3)
+A4=XXX | B4=R1-260XXXX | C4=XXX-1 | D4=DCP | E4=non-EE | F4=non-EE | I4=N | J4=40 | K4=4 | L4=10 | P4=5MHz | Q4=5 | U4=2 | V4=33.32 | X4=IM | AA4=PDCCH skipping | AB4=20 | AD4=40 | AH4=1 | AI4=450 | AN4=100 | AR4=0.2032 | AS4=CDRX | AX4=dense urban
+A5=XXX | B5=R1-260XXXX | C5=XXX-2 | D5=WUS cycle shorter than CDRX cycle | E5=non-EE | F5=non-EE | G5=non-EE | H5=non-EE | I5=N | J5=40 | K5=4 | L5=10 | M5=40 | O5=2 | P5=10MHz | Q5=5 | R5=0 | S5=0 | U5=4 | X5=FTP3 | AA5=PDCCH skipping | AB5=20 | AD5=160 | AE5=4 | AF5=800 | AH5=1.1 | AI5=450 | AJ5=10.5 | AK5=21 | AL5=25.2 | AN5=100 | AO5=120 | AP5=170 | AR5=0.3861 | AS5=CDRX | AX5=dense urban
+AS6==IF(OR(AQ6="",AR6="",AQ6=0),"",(AQ6-AR6)/AQ6)
+AS7==IF(OR(AQ7="",AR7="",AQ7=0),"",(AQ7-AR7)/AQ7)
+AS8==IF(OR(AQ8="",AR8="",AQ8=0),"",(AQ8-AR8)/AQ8)
+AS9==IF(OR(AQ9="",AR9="",AQ9=0),"",(AQ9-AR9)/AQ9)
+AS10==IF(OR(AQ10="",AR10="",AQ10=0),"",(AQ10-AR10)/AQ10)
+AS11==IF(OR(AQ11="",AR11="",AQ11=0),"",(AQ11-AR11)/AQ11)
+AS12==IF(OR(AQ12="",AR12="",AQ12=0),"",(AQ12-AR12)/AQ12)
+AS13==IF(OR(AQ13="",AR13="",AQ13=0),"",(AQ13-AR13)/AQ13)
+AS14==IF(OR(AQ14="",AR14="",AQ14=0),"",(AQ14-AR14)/AQ14)
+AS15==IF(OR(AQ15="",AR15="",AQ15=0),"",(AQ15-AR15)/AQ15)
+AS16==IF(OR(AQ16="",AR16="",AQ16=0),"",(AQ16-AR16)/AQ16)
+AS17==IF(OR(AQ17="",AR17="",AQ17=0),"",(AQ17-AR17)/AQ17)
+AS18==IF(OR(AQ18="",AR18="",AQ18=0),"",(AQ18-AR18)/AQ18)
+AS19==IF(OR(AQ19="",AR19="",AQ19=0),"",(AQ19-AR19)/AQ19)
+AS20==IF(OR(AQ20="",AR20="",AQ20=0),"",(AQ20-AR20)/AQ20)
+AS21==IF(OR(AQ21="",AR21="",AQ21=0),"",(AQ21-AR21)/AQ21)
+AS22==IF(OR(AQ22="",AR22="",AQ22=0),"",(AQ22-AR22)/AQ22)
+AS23==IF(OR(AQ23="",AR23="",AQ23=0),"",(AQ23-AR23)/AQ23)
+AS24==IF(OR(AQ24="",AR24="",AQ24=0),"",(AQ24-AR24)/AQ24)
+AS25==IF(OR(AQ25="",AR25="",AQ25=0),"",(AQ25-AR25)/AQ25)
+AS26==IF(OR(AQ26="",AR26="",AQ26=0),"",(AQ26-AR26)/AQ26)
+AS27==IF(OR(AQ27="",AR27="",AQ27=0),"",(AQ27-AR27)/AQ27)
+AS28==IF(OR(AQ28="",AR28="",AQ28=0),"",(AQ28-AR28)/AQ28)
+AS29==IF(OR(AQ29="",AR29="",AQ29=0),"",(AQ29-AR29)/AQ29)
+AS30==IF(OR(AQ30="",AR30="",AQ30=0),"",(AQ30-AR30)/AQ30)
+AS31==IF(OR(AQ31="",AR31="",AQ31=0),"",(AQ31-AR31)/AQ31)
+AS32==IF(OR(AQ32="",AR32="",AQ32=0),"",(AQ32-AR32)/AQ32)
+AS33==IF(OR(AQ33="",AR33="",AQ33=0),"",(AQ33-AR33)/AQ33)
+AS34==IF(OR(AQ34="",AR34="",AQ34=0),"",(AQ34-AR34)/AQ34)
+AS35==IF(OR(AQ35="",AR35="",AQ35=0),"",(AQ35-AR35)/AQ35)
+AS36==IF(OR(AQ36="",AR36="",AQ36=0),"",(AQ36-AR36)/AQ36)
+AS37==IF(OR(AQ37="",AR37="",AQ37=0),"",(AQ37-AR37)/AQ37)
+AS38==IF(OR(AQ38="",AR38="",AQ38=0),"",(AQ38-AR38)/AQ38)
+AS39==IF(OR(AQ39="",AR39="",AQ39=0),"",(AQ39-AR39)/AQ39)
+AS40==IF(OR(AQ40="",AR40="",AQ40=0),"",(AQ40-AR40)/AQ40)
+AS41==IF(OR(AQ41="",AR41="",AQ41=0),"",(AQ41-AR41)/AQ41)
+AS42==IF(OR(AQ42="",AR42="",AQ42=0),"",(AQ42-AR42)/AQ42)
+AS43==IF(OR(AQ43="",AR43="",AQ43=0),"",(AQ43-AR43)/AQ43)
+AS44==IF(OR(AQ44="",AR44="",AQ44=0),"",(AQ44-AR44)/AQ44)
+AS45==IF(OR(AQ45="",AR45="",AQ45=0),"",(AQ45-AR45)/AQ45)
+AS46==IF(OR(AQ46="",AR46="",AQ46=0),"",(AQ46-AR46)/AQ46)
+AS47==IF(OR(AQ47="",AR47="",AQ47=0),"",(AQ47-AR47)/AQ47)
+AS48==IF(OR(AQ48="",AR48="",AQ48=0),"",(AQ48-AR48)/AQ48)
+AS49==IF(OR(AQ49="",AR49="",AQ49=0),"",(AQ49-AR49)/AQ49)
+AS50==IF(OR(AQ50="",AR50="",AQ50=0),"",(AQ50-AR50)/AQ50)
+AS51==IF(OR(AQ51="",AR51="",AQ51=0),"",(AQ51-AR51)/AQ51)
+AS52==IF(OR(AQ52="",AR52="",AQ52=0),"",(AQ52-AR52)/AQ52)
+AS53==IF(OR(AQ53="",AR53="",AQ53=0),"",(AQ53-AR53)/AQ53)
+AS54==IF(OR(AQ54="",AR54="",AQ54=0),"",(AQ54-AR54)/AQ54)
+AS55==IF(OR(AQ55="",AR55="",AQ55=0),"",(AQ55-AR55)/AQ55)
+AS56==IF(OR(AQ56="",AR56="",AQ56=0),"",(AQ56-AR56)/AQ56)
+AS57==IF(OR(AQ57="",AR57="",AQ57=0),"",(AQ57-AR57)/AQ57)
+AS58==IF(OR(AQ58="",AR58="",AQ58=0),"",(AQ58-AR58)/AQ58)
+AS59==IF(OR(AQ59="",AR59="",AQ59=0),"",(AQ59-AR59)/AQ59)
+AS60==IF(OR(AQ60="",AR60="",AQ60=0),"",(AQ60-AR60)/AQ60)
+AS61==IF(OR(AQ61="",AR61="",AQ61=0),"",(AQ61-AR61)/AQ61)
+AS62==IF(OR(AQ62="",AR62="",AQ62=0),"",(AQ62-AR62)/AQ62)
+AS63==IF(OR(AQ63="",AR63="",AQ63=0),"",(AQ63-AR63)/AQ63)
+AS64==IF(OR(AQ64="",AR64="",AQ64=0),"",(AQ64-AR64)/AQ64)
+AS65==IF(OR(AQ65="",AR65="",AQ65=0),"",(AQ65-AR65)/AQ65)
+AS66==IF(OR(AQ66="",AR66="",AQ66=0),"",(AQ66-AR66)/AQ66)
+AS67==IF(OR(AQ67="",AR67="",AQ67=0),"",(AQ67-AR67)/AQ67)
+AS68==IF(OR(AQ68="",AR68="",AQ68=0),"",(AQ68-AR68)/AQ68)
+AS69==IF(OR(AQ69="",AR69="",AQ69=0),"",(AQ69-AR69)/AQ69)
+AS70==IF(OR(AQ70="",AR70="",AQ70=0),"",(AQ70-AR70)/AQ70)
+AS71==IF(OR(AQ71="",AR71="",AQ71=0),"",(AQ71-AR71)/AQ71)
+AS72==IF(OR(AQ72="",AR72="",AQ72=0),"",(AQ72-AR72)/AQ72)
+AS73==IF(OR(AQ73="",AR73="",AQ73=0),"",(AQ73-AR73)/AQ73)
+AS74==IF(OR(AQ74="",AR74="",AQ74=0),"",(AQ74-AR74)/AQ74)
+AS75==IF(OR(AQ75="",AR75="",AQ75=0),"",(AQ75-AR75)/AQ75)
+AS76==IF(OR(AQ76="",AR76="",AQ76=0),"",(AQ76-AR76)/AQ76)
+AS77==IF(OR(AQ77="",AR77="",AQ77=0),"",(AQ77-AR77)/AQ77)
+AS78==IF(OR(AQ78="",AR78="",AQ78=0),"",(AQ78-AR78)/AQ78)
+AS79==IF(OR(AQ79="",AR79="",AQ79=0),"",(AQ79-AR79)/AQ79)
+AS80==IF(OR(AQ80="",AR80="",AQ80=0),"",(AQ80-AR80)/AQ80)
+AS81==IF(OR(AQ81="",AR81="",AQ81=0),"",(AQ81-AR81)/AQ81)
+AS82==IF(OR(AQ82="",AR82="",AQ82=0),"",(AQ82-AR82)/AQ82)
+AS83==IF(OR(AQ83="",AR83="",AQ83=0),"",(AQ83-AR83)/AQ83)
+AS84==IF(OR(AQ84="",AR84="",AQ84=0),"",(AQ84-AR84)/AQ84)
+AS85==IF(OR(AQ85="",AR85="",AQ85=0),"",(AQ85-AR85)/AQ85)
+AS86==IF(OR(AQ86="",AR86="",AQ86=0),"",(AQ86-AR86)/AQ86)
+AS87==IF(OR(AQ87="",AR87="",AQ87=0),"",(AQ87-AR87)/AQ87)
+AS88==IF(OR(AQ88="",AR88="",AQ88=0),"",(AQ88-AR88)/AQ88)
+AS89==IF(OR(AQ89="",AR89="",AQ89=0),"",(AQ89-AR89)/AQ89)
+AS90==IF(OR(AQ90="",AR90="",AQ90=0),"",(AQ90-AR90)/AQ90)
+AS91==IF(OR(AQ91="",AR91="",AQ91=0),"",(AQ91-AR91)/AQ91)
+AS92==IF(OR(AQ92="",AR92="",AQ92=0),"",(AQ92-AR92)/AQ92)
+AS93==IF(OR(AQ93="",AR93="",AQ93=0),"",(AQ93-AR93)/AQ93)
+AS94==IF(OR(AQ94="",AR94="",AQ94=0),"",(AQ94-AR94)/AQ94)
+AS95==IF(OR(AQ95="",AR95="",AQ95=0),"",(AQ95-AR95)/AQ95)
+AS96==IF(OR(AQ96="",AR96="",AQ96=0),"",(AQ96-AR96)/AQ96)
+AS97==IF(OR(AQ97="",AR97="",AQ97=0),"",(AQ97-AR97)/AQ97)
+AS98==IF(OR(AQ98="",AR98="",AQ98=0),"",(AQ98-AR98)/AQ98)
+AS99==IF(OR(AQ99="",AR99="",AQ99=0),"",(AQ99-AR99)/AQ99)
+AS100==IF(OR(AQ100="",AR100="",AQ100=0),"",(AQ100-AR100)/AQ100)
+AS101==IF(OR(AQ101="",AR101="",AQ101=0),"",(AQ101-AR101)/AQ101)
+AS102==IF(OR(AQ102="",AR102="",AQ102=0),"",(AQ102-AR102)/AQ102)
+AS103==IF(OR(AQ103="",AR103="",AQ103=0),"",(AQ103-AR103)/AQ103)
+AS104==IF(OR(AQ104="",AR104="",AQ104=0),"",(AQ104-AR104)/AQ104)
+AS105==IF(OR(AQ105="",AR105="",AQ105=0),"",(AQ105-AR105)/AQ105)
+AS106==IF(OR(AQ106="",AR106="",AQ106=0),"",(AQ106-AR106)/AQ106)
+AS107==IF(OR(AQ107="",AR107="",AQ107=0),"",(AQ107-AR107)/AQ107)
+AS108==IF(OR(AQ108="",AR108="",AQ108=0),"",(AQ108-AR108)/AQ108)
+AS109==IF(OR(AQ109="",AR109="",AQ109=0),"",(AQ109-AR109)/AQ109)
+AS110==IF(OR(AQ110="",AR110="",AQ110=0),"",(AQ110-AR110)/AQ110)
+AS111==IF(OR(AQ111="",AR111="",AQ111=0),"",(AQ111-AR111)/AQ111)
+AS112==IF(OR(AQ112="",AR112="",AQ112=0),"",(AQ112-AR112)/AQ112)
+AS113==IF(OR(AQ113="",AR113="",AQ113=0),"",(AQ113-AR113)/AQ113)
+AS114==IF(OR(AQ114="",AR114="",AQ114=0),"",(AQ114-AR114)/AQ114)
+AS115==IF(OR(AQ115="",AR115="",AQ115=0),"",(AQ115-AR115)/AQ115)
+AS116==IF(OR(AQ116="",AR116="",AQ116=0),"",(AQ116-AR116)/AQ116)
+AS117==IF(OR(AQ117="",AR117="",AQ117=0),"",(AQ117-AR117)/AQ117)
+AS118==IF(OR(AQ118="",AR118="",AQ118=0),"",(AQ118-AR118)/AQ118)
+AS119==IF(OR(AQ119="",AR119="",AQ119=0),"",(AQ119-AR119)/AQ119)
+AS120==IF(OR(AQ120="",AR120="",AQ120=0),"",(AQ120-AR120)/AQ120)
+AS121==IF(OR(AQ121="",AR121="",AQ121=0),"",(AQ121-AR121)/AQ121)
+AS122==IF(OR(AQ122="",AR122="",AQ122=0),"",(AQ122-AR122)/AQ122)
+AS123==IF(OR(AQ123="",AR123="",AQ123=0),"",(AQ123-AR123)/AQ123)
+AS124==IF(OR(AQ124="",AR124="",AQ124=0),"",(AQ124-AR124)/AQ124)
+AS125==IF(OR(AQ125="",AR125="",AQ125=0),"",(AQ125-AR125)/AQ125)
+AS126==IF(OR(AQ126="",AR126="",AQ126=0),"",(AQ126-AR126)/AQ126)
+AS127==IF(OR(AQ127="",AR127="",AQ127=0),"",(AQ127-AR127)/AQ127)
+AS128==IF(OR(AQ128="",AR128="",AQ128=0),"",(AQ128-AR128)/AQ128)
+AS129==IF(OR(AQ129="",AR129="",AQ129=0),"",(AQ129-AR129)/AQ129)
+AS130==IF(OR(AQ130="",AR130="",AQ130=0),"",(AQ130-AR130)/AQ130)
+AS131==IF(OR(AQ131="",AR131="",AQ131=0),"",(AQ131-AR131)/AQ131)
+AS132==IF(OR(AQ132="",AR132="",AQ132=0),"",(AQ132-AR132)/AQ132)
+AS133==IF(OR(AQ133="",AR133="",AQ133=0),"",(AQ133-AR133)/AQ133)
+AS134==IF(OR(AQ134="",AR134="",AQ134=0),"",(AQ134-AR134)/AQ134)
+AS135==IF(OR(AQ135="",AR135="",AQ135=0),"",(AQ135-AR135)/AQ135)
+AS136==IF(OR(AQ136="",AR136="",AQ136=0),"",(AQ136-AR136)/AQ136)
+AS137==IF(OR(AQ137="",AR137="",AQ137=0),"",(AQ137-AR137)/AQ137)
+AS138==IF(OR(AQ138="",AR138="",AQ138=0),"",(AQ138-AR138)/AQ138)
+AS139==IF(OR(AQ139="",AR139="",AQ139=0),"",(AQ139-AR139)/AQ139)
+AS140==IF(OR(AQ140="",AR140="",AQ140=0),"",(AQ140-AR140)/AQ140)
+AS141==IF(OR(AQ141="",AR141="",AQ141=0),"",(AQ141-AR141)/AQ141)
+AS142==IF(OR(AQ142="",AR142="",AQ142=0),"",(AQ142-AR142)/AQ142)
+AS143==IF(OR(AQ143="",AR143="",AQ143=0),"",(AQ143-AR143)/AQ143)
+AS144==IF(OR(AQ144="",AR144="",AQ144=0),"",(AQ144-AR144)/AQ144)
+AS145==IF(OR(AQ145="",AR145="",AQ145=0),"",(AQ145-AR145)/AQ145)
+AS146==IF(OR(AQ146="",AR146="",AQ146=0),"",(AQ146-AR146)/AQ146)
+AS147==IF(OR(AQ147="",AR147="",AQ147=0),"",(AQ147-AR147)/AQ147)
+AS148==IF(OR(AQ148="",AR148="",AQ148=0),"",(AQ148-AR148)/AQ148)
+AS149==IF(OR(AQ149="",AR149="",AQ149=0),"",(AQ149-AR149)/AQ149)
+AS150==IF(OR(AQ150="",AR150="",AQ150=0),"",(AQ150-AR150)/AQ150)
+AS151==IF(OR(AQ151="",AR151="",AQ151=0),"",(AQ151-AR151)/AQ151)
+AS152==IF(OR(AQ152="",AR152="",AQ152=0),"",(AQ152-AR152)/AQ152)
+AS153==IF(OR(AQ153="",AR153="",AQ153=0),"",(AQ153-AR153)/AQ153)
+AS154==IF(OR(AQ154="",AR154="",AQ154=0),"",(AQ154-AR154)/AQ154)
+AS155==IF(OR(AQ155="",AR155="",AQ155=0),"",(AQ155-AR155)/AQ155)
+AS156==IF(OR(AQ156="",AR156="",AQ156=0),"",(AQ156-AR156)/AQ156)
+AS157==IF(OR(AQ157="",AR157="",AQ157=0),"",(AQ157-AR157)/AQ157)
+AS158==IF(OR(AQ158="",AR158="",AQ158=0),"",(AQ158-AR158)/AQ158)
+AS159==IF(OR(AQ159="",AR159="",AQ159=0),"",(AQ159-AR159)/AQ159)
+AS160==IF(OR(AQ160="",AR160="",AQ160=0),"",(AQ160-AR160)/AQ160)
+SHEET Lookup_Lists rows=7 cols=21
+A1=yes_no | B1=eval | C1=idle_cmp | D1=idle_scheme | E1=proc | F1=fr | G1=ue | H1=sleep | I1=traffic | J1=conn_scheme | K1=unit | L1=sched | M1=scope | N1=rrc | O1=cell | P1=sync | Q1=detect | R1=signal | S1=metric | T1=rlm | U1=status
+A2=y | B2=Analytical | C2=Case1-6 vs Case1-3 | D2=I-DRX with PEI | E2=EE | F2=FR1 | G2=eMBB | H2=Ultra deep sleep | I2=VoIP | J2=C-DRX | K2=slots | L2=same-slot | M2=per cell | N2=RRC idle/inactive | O2=Serving cell | P2=Synchronous | Q2=Known/no detection | R2=6GR sync signal | S2=RSRP | T2=IS detection | U2=Agreed
+A3=n | B3=LLS | C3=Case1-6 vs Case1-2 | D3=I-DRX without PEI | E3=non-EE | F3=around 7 GHz | G3=RedCap | H3=Deep sleep | I3=FTP3 | J3=DCP with C-DRX | K3=symbols | L3=cross-slot | M3=per cell group | N3=RRC connected | O3=Neighboring cells | P3=Asynchronous | Q3=EE detection/identification | R3=NR PSS/SSS | S3=RSRQ | T3=OOS detection | U3=Bracketed / to be confirmed
+B4=SLS | C4=Case3-6 vs Case3-3 | D4=I-DRX with DL WUS + non-EE RRM | E4=Not applicable | F4=FR2 | G4=Other | H4=Light sleep | I4=Instant message | J4=DL WUS with C-DRX | L4=Other | O4=Serving + neighboring cells | Q4=non-EE detection/identification | R4=SSB | S4=SINR | T4=IS/OOS detection | U4=FFS
+B5=Analytical+LLS | C5=Case3-6 vs Case3-2 | D5=I-DRX with DL WUS + EE RRM | E5=Mixed | H5=Micro sleep | I5=XR | J5=DL WUS without C-DRX | Q5=Other | R5=CSI-RS/TRS | S5=SNR | T5=BLER-based | U5=Company report
+B6=SLS+LLS | C6=Case4-6 vs Case4-2 | D6=Other | H6=Other | I6=Other | J6=Other | R6=Other | S6=Other | T6=Other | U6=Template recommendation
+C7=Other
+SHEET General Notes rows=11 cols=3
+A3=Contact
+A4=Name | B4=email | C4=company
+A5=Xin Qu | B5=quxin@vivo.com | C5=vivo
+A6=Lihui Wang | B6=wanglihui@vivo.com | C6=vivo
+SHEET 01_Agreements rows=31 cols=8
+A1=Agreement Parameters and Template Treatment
+A2=Agreed, bracketed, FFS and company-report items are distinguished.
+A4=Topic | B4=Parameter | C4=Value | D4=Unit | E4=Applicability | F4=Status | G4=Source | H4=Template treatment
+A5=WUS performance | B5=FAR/FDR definition | C5=FAR: target detected when no WUS; 
+FDR: target detected when a different WUS was sent | D5=rate | E5=All states | F5=Agreed | G5=RAN1#125 | H5=Separate fields
+A6=WUS LLS | B6=MDR / FAR / FDR | C6=MDR 0.5%,1%; FAR 1%,5%,10%; FDR 1%,5%,10% | D6=% | E6=EE LLS | F6=Agreed | G6=RAN1#125 | H6=Report UE saving and NW overhead impact
+A7=WUS LLS | B7=Carrier/SCS | C7=700 MHz/15 kHz; 3.5 GHz/30 kHz; 7 GHz/30 kHz | E7=Coverage | F7=Agreed | G7=#124bis/#125 | H7=Structured fields
+A8=WUS LLS | B8=Channel/speed | C8=TDL-C 300 ns; 3 km/h (TDL-A 30 ns bracketed) | E8=Coverage | F8=Mixed | G8=#124bis | H8=Record option
+A9=WUS LLS | B9=Bandwidth | C9=Up to 12/24/48 PRBs; max 10 MHz | D9=PRB/MHz | E9=Coverage | F9=Agreed | G9=#124bis | H9=Collect PRB/symbol/SCS
+A10=WUS LLS | B10=Residual CFO/timing | C10=Up to [2] ppm / [1] us | D10=ppm/us | E10=Coverage | F10=Bracketed | G10=#124bis | H10=Lower value requires power assumptions
+A11=WUS LLS | B11=Rx / information bits | C11=1 or 2 Rx; information bits company report | E11=EE mode | F11=Agreed/report | G11=#124bis | H11=Separate numeric fields
+A12=Paging | B12=R_E,REF | C12=1%, 0.1%, 0.01%, 0.001%; Y_REF=1.28 s | D12=% | E12=Per UE/PO | F12=Agreed | G12=#125 | H12=Core input
+A13=Paging | B13=Group rate | C13=R_G=1-(1-R_E)^N; N FFS | D13=% | E13=Group | F13=Formula/FFS | G13=#125 | H13=Collect N/effective wake rate
+A14=Idle baseline | B14=I-DRX | C14=1.28 | D14=s | E14=FR1 incl. ~7 GHz | F14=Agreed | G14=#123 | H14=Default
+A15=C-DRX | B15=VoIP | C15=40/8/10 | D15= cycle/on/IAT ms | E15=Connected | F15=Agreed | G15=#123 | H15=Default
+A16=C-DRX | B16=FTP3 | C16=160/8/100 | D16=ms | E16=Connected | F16=Agreed | G16=#123 | H16=Default
+A17=C-DRX | B17=Instant message | C17=320/8/100 | D17=ms | E17=Connected | F17=Agreed | G17=#123 | H17=Default
+A18=C-DRX | B18=XR | C18=16/10/4 | D18=ms | E18=Connected | F18=Agreed | G18=#123 | H18=Default
+A19=Connected WUS | B19=Cases | C19=C-DRX; DCP+C-DRX; WUS+C-DRX; WUS without C-DRX | E19=Connected | F19=Agreed | G19=#125 | H19=Separate comparison rows
+A20=Connected WUS | B20=Periodicity | C20=At least consider WUS period = C-DRX cycle | E20=Comparison | F20=Encouraged | G20=#125 | H20=Explicit y/n
+A21=Sleep power | B21=UDS/deep/light/micro | C21=0.05+Y / 1+Y / 20 / 45; Y=0.1 with EE; else Y=0 | D21=relative | E21=UE | F21=Agreed | G21=#123 | H21=UDS not for connected
+A22=Transitions | B22=UDS/deep/light/micro | C22=[40000]/450/100/0 energy; [1600]/20/6/0 ms | D22=power·ms/ms | E22=UE | F22=Mixed | G22=#123 | H22=Keep brackets visible
+A23=EE processing | B23=Additional power | C23=10 micro; 12 light; 15 other for 1Rx | D23=relative | E23=FR1 5 MHz | F23=Agreed/FFS | G23=#123 | H23=Split incremental/total
+A24=EE processing | B24=Entry/exit overhead | C24=[15] each; ramp [2] ms | D24=power·ms/ms | E24=UDS/deep | F24=Bracketed | G24=#123 | H24=Not final
+A25=RRM EE | B25=Serving | C25=Use EE processing power; sequence processing assumed | D25=relative | E25=Idle/connected | F25=Agreed | G25=#125 | H25=EE column
+A26=RRM EE | B26=Intra-F scaling | C26=N=4:1.2x; N=8:1.5x; synchronous; no cell detection | D26=x | E26=FR1 incl. ~7GHz | F26=Agreed | G26=#125 | H26=Collect N/sync/detection
+A27=RRM non-EE | B27=Serving | C27=100 | D27=relative | E27=100 MHz ref | F27=Agreed | G27=#124bis | H27=Scale BW/antenna if used
+A28=RRM non-EE | B28=Serving+neighbor N=4 | C28=Sync FR1/FR2 120/195; async 140/255 | D28=relative | E28=Known cells | F28=Agreed | G28=#124bis | H28=Reference
+A29=RRM non-EE | B29=Serving+neighbor N=8 | C29=Sync FR1/FR2 150/225; async 170/285 | D29=relative | E29=Known cells | F29=Agreed | G29=#124bis | H29=Reference
+A30=RRM LLS | B30=Assumptions | C30=3.5GHz; TDL-C 300ns; 3km/h; 1Tx; 1/2Rx; avg 1/2/3/4; SNR -6/-7/-8; ICI +3dB | E30=Serving EE | F30=Agreed/FFS | G30=#125 | H30=Dedicated fields
+A31=RLM | B31=Specific agreement | F31=FFS | G31=Source audit | H31=Company-report placeholder

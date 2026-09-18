@@ -1,0 +1,8 @@
+B0: 3GPP TSG RAN WG1 #126R1-2606878
+B1: Maastricht, NL, Aug 24th - 28th, 2026
+B3: Source:Moderator (vivo)
+B4: Title:Template for collecting UE energy saving results of 6GR DL WUS   
+B5: Agenda Item:10.6.1.2
+B6: Document for:Approval
+B8: Introduction
+B9: This provides the template in the attachment for collecting UE energy saving results of 6GR DL WUS.

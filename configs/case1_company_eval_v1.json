@@ -1,0 +1,96 @@
+{
+  "config_id": "case1_company_eval_v1",
+  "version": "1.0.0",
+  "purpose": "RAN1#126 Case 1 mechanism matrix with explicit company-proposal numerical assumptions for a reproducible connected-mode relative-energy comparison.",
+  "claim_scope": "single-UE abstract relative-energy and latency numerical discussion",
+  "case_definition_source": {
+    "source_id": "LOCAL-126",
+    "locator": "RAN1#126 Chair Notes B4787 R1-R6",
+    "evidence_status": "MEETING_AGREEMENT"
+  },
+  "timer_and_monitoring": {
+    "policy_id": "company_r1_2603659",
+    "source_id": "NEW-3659-TEXT",
+    "locator": "R1-2603659 Table 12, extracted text B326",
+    "evidence_status": "COMPANY_PROPOSAL",
+    "slot_duration_ms": 0.5,
+    "independent_wus_period_ms": 5.0,
+    "wus_timer_ms": 8.0,
+    "coupled_gap_ms": 3.0,
+    "independent_wake_delay_ms": 10.0,
+    "monitor_symbols": 2,
+    "ofdm_symbols_per_slot": 14,
+    "coupled_monitor_occasions": 2,
+    "coupled_monitor_spacing_slots": 1,
+    "wus_rx_duration_ms": 0.071429,
+    "dcp_rx_duration_ms": 0.071429,
+    "note": "The 5 ms period is 10 slots at the explicitly assumed 30 kHz SCS. The 2-symbol duration is 2/14 of a 0.5 ms slot, rounded to integer nanoseconds. Coupled WUS/DCP uses two 2-symbol occasions in consecutive slots; independent WUS uses one occasion per period. Annex E's separate 4 ms WUS-MO assumption is not mixed into the Table-12 Case-1 timing."
+  },
+  "measurement": {
+    "source_id": "NEW-3659-TEXT",
+    "locator": "R1-2603659 Annex E, extracted text B646",
+    "evidence_status": "COMPANY_PROPOSAL",
+    "cycle_ms": 160.0,
+    "duration_ms": 2.0,
+    "non_ee_power_unit": 120.0,
+    "ee_power_unit": 18.0,
+    "ee_transition_energy_per_edge_unit_ms": 15.0,
+    "combination_note": "Annex E supplies a connected-mode measurement power model but belongs to a separate company evaluation. Combining it with Table 12 is an explicit project scenario, not a reproduction of Table 13."
+  },
+  "calendar_phase": {
+    "cdrx_offset_ms": 0.0,
+    "wus_offset_ms": 0.0,
+    "measurement_offset_ms": 0.0,
+    "evidence_status": "ASSUMPTION",
+    "interpretation": "The primary matrix uses an explicitly aligned zero phase for reproducibility. The source documents do not require C-DRX, WUS and measurement calendars to be phase-aligned; de-aligned offsets are evaluated in the theory audit."
+  },
+  "energy": {
+    "source_id": "LOCAL-38840 and NEW-3659-TEXT",
+    "locator": "TR 38.840 Table 18/19 B742/B752; R1-2603659 Annex E B646",
+    "evidence_status": "MIXED_RESEARCH_AND_COMPANY_PROPOSAL",
+    "sleep_state_model": "gap_feasible",
+    "mr_micro_sleep_power_unit": 45.0,
+    "mr_light_sleep_power_unit": 20.0,
+    "mr_idle_power_unit": 1.1,
+    "mr_deep_sleep_power_unit": 1.1,
+    "pdcch_only_power_unit": 100.0,
+    "pdcch_pdsch_power_unit": 300.0,
+    "mr_light_transition_energy_unit_ms": 100.0,
+    "mr_light_transition_time_ms": 6.0,
+    "wus_monitor_power_unit": 15.0,
+    "mr_deep_transition_energy_unit_ms": 450.0,
+    "mr_deep_transition_time_ms": 20.0,
+    "lr_idle_power_unit": 0.0,
+    "dcp_monitor_power_unit": 15.0,
+    "assumptions": {
+      "lr_idle_power_unit": "ASSUMPTION: LR is off outside a scheduled monitoring occasion; Annex E supplies WUS monitoring power but no LR off-floor value.",
+      "dcp_monitor_power_unit": "PROXY: DCP reuses WUS monitoring power because Annex E supplies no DCP power. Report DCP results as sensitivity-level evidence.",
+      "mr_deep_sleep_power_unit": "COMPANY_PROPOSAL: Annex E uses 1.1 instead of the TR 38.840 Table-18 reference value 1.",
+      "state_selection": "MR gaps use deep sleep only when the gap is at least 20 ms, light sleep at 6-20 ms, and micro sleep below 6 ms."
+    }
+  },
+  "service": {
+    "service_rate_bits_per_ms": 800000,
+    "evidence_status": "ASSUMPTION",
+    "interpretation": "Abstract single-UE payload service rate. A 0.5 Mbyte FTP3 packet occupies 5 ms of PDSCH at this rate. A calibrated scheduler/BLER model is not available."
+  },
+  "detection": {
+    "source": "sixg_case1_v1 profile",
+    "evidence_status": "ASSUMPTION",
+    "mdr": 0.01,
+    "far": 0.01,
+    "fdr": 0.01
+  },
+  "statistics": {
+    "warmup_cdrx_cycles": 2,
+    "drain_pdb_multiples": 1,
+    "evidence_status": "PROJECT_METHOD",
+    "interpretation": "Simulate two C-DRX cycles before the fixed observation window and one PDB after it. Warm-up removes the artificial free transition at t=0; drain observes completion without adding post-window energy or new arrivals."
+  },
+  "reporting_rules": [
+    "Never call company-proposal numbers normative or agreed 3GPP parameters.",
+    "Report power saving together with completion, delay, PDB satisfaction, sample counts and confidence intervals.",
+    "Do not tune outputs to a desired case ordering; all cases use this frozen configuration.",
+    "Do not claim PHY calibration, conformance, absolute battery life or network energy saving."
+  ]
+}

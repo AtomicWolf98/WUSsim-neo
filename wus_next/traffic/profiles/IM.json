@@ -1,0 +1,88 @@
+{
+  "traffic_schema_version": "1.0",
+  "traffic_id": "IM",
+  "profile_version": "1.0.0",
+  "model_class": "poisson_fixed_size",
+  "ue_id": "u1",
+  "evidence_status": "RESEARCH_REFERENCE",
+  "formal_eligible": false,
+  "role": "abstract_path_A_traffic",
+  "sources": [
+    "LOCAL-38840",
+    "W02-TASK"
+  ],
+  "flow_id": "IM.u1.dl",
+  "parameters": {
+    "packet_size": {
+      "value": 100000,
+      "unit": "bytes",
+      "source_id": "LOCAL-38840",
+      "locator": "B947 R2 'Instant messaging 0.1 Mbytes'; B912 note that IM uses the FTP model 3 arrival process",
+      "evidence_status": "RESEARCH_REFERENCE",
+      "interpretation": "Fixed application packet size in decimal Mbyte definition (100000 bytes = 800000 bits); not MiB and not a PHY transport block.",
+      "valid_domain": {
+        "min": 0
+      }
+    },
+    "mean_interarrival": {
+      "value": 2000,
+      "unit": "ms",
+      "source_id": "LOCAL-38840",
+      "locator": "B947 R3 'Mean inter-arrival time: 2 sec'",
+      "evidence_status": "RESEARCH_REFERENCE",
+      "interpretation": "Mean inter-arrival time of the Poisson (exponential inter-arrival) arrival process; the arrival process and the size/mean values are recorded separately.",
+      "valid_domain": {
+        "min": 0
+      }
+    },
+    "pdb_ms": {
+      "value": 300,
+      "unit": "ms",
+      "source_id": "W02-TASK",
+      "locator": "reviewed config_reviewed.yaml qos.delay_budget_ms and W02_TRAFFIC.md step 2",
+      "evidence_status": "ASSUMPTION",
+      "interpretation": "Self-reported engineering delay budget used only to fill Packet.deadline_ns; it is not a 3GPP requirement for this traffic type.",
+      "valid_domain": {
+        "min": 0
+      }
+    },
+    "arrival_quantization": {
+      "value": "round_half_up_nearest_ns",
+      "unit": null,
+      "source_id": "W02-TASK",
+      "locator": "W02_TRAFFIC.md step 3",
+      "evidence_status": "ASSUMPTION",
+      "interpretation": "Continuous-time arrival instants are quantized to the nearest integer nanosecond with round-half-up; the absolute quantization error is at most 0.5 ns and arrivals are never snapped onto a DRX, measurement or WUS grid.",
+      "valid_domain": "integer_ns"
+    }
+  },
+  "layer_assumptions": {
+    "ip_mtu_bytes": {
+      "value": 1500,
+      "unit": "bytes",
+      "source_id": "W02-TASK",
+      "locator": "W02_TRAFFIC.md step 7; TR 38.838 section 5.1.1 (B440/B441) defines the frame-level packet as a set of IP packets but no IP packet size",
+      "evidence_status": "ASSUMPTION",
+      "interpretation": "Engineering IP payload cap used to split a frame into IP packets; headers and padding are not modelled, so IP payload bits sum exactly to the frame bits.",
+      "valid_domain": {
+        "min": 1
+      }
+    },
+    "tb_max_bits": {
+      "value": 868584,
+      "unit": "bits",
+      "source_id": "LOCAL-38840",
+      "locator": "B976: one 10-symbol PDSCH in a slot carries 868584 information bits (FR1 100 MHz calibration assumption)",
+      "evidence_status": "RESEARCH_REFERENCE",
+      "interpretation": "Wireless transport-block payload cap for the reviewed calibration reference; W02 only splits payload bits and assigns no radio resources.",
+      "valid_domain": {
+        "min": 1
+      }
+    }
+  },
+  "metadata": {
+    "arrival_process": "FTP model 3 applied to the instant-messaging size/interval row",
+    "legacy_reference": "reviewed TRAFFIC_MODELS['IM'] = poisson 100000 bytes / 2000 ms",
+    "scope_note": "Path-A abstract input; the IM C-DRX tuple is a separate configuration input, not part of this stream."
+  }
+}
